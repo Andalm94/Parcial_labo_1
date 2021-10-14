@@ -1,0 +1,19 @@
+#ifndef INGRESODEDATOS_H_
+#define INGRESODEDATOS_H_
+
+typedef struct{
+	char empresa[50];
+	int cuit;
+	char direccion[50];
+	char localidad[20];
+	int idCliente;
+	int isEmpty;
+}eCliente;
+
+int GetInt(char mensaje[], int min, int max, char mensajeError[]);
+float GetFloat(char mensaje[], int min, int max, char mensajeError[]);
+int ValidarNumero(int numero);
+void GetString (char mensaje[], char cadena[], int tam);
+
+
+#endif

@@ -1,0 +1,8 @@
+11:14:28 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Parcial_Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+
+11:14:29 Build Failed. 1 errors, 0 warnings. (took 84ms)
+

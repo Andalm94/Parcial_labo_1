@@ -1,0 +1,13 @@
+#ifndef MANEJOSTRUCTS_H_
+#define MANEJOSTRUCTS_H_
+
+#include "Inputs.h"
+
+
+int InicializarClientes(eCliente* list, int tam);
+int MostrarClientes(eCliente* list, int tam);
+
+int BuscarEspacioLibre(eCliente* list, int tam);
+int CargarNuevoCliente(eCliente* list, int tam);
+
+#endif /* MANEJOSTRUCTS_H_ */

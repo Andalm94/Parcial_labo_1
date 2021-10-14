@@ -1,0 +1,60 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
+
+#include "Inputs.h"
+#include "ManejoStructs.h"
+#include "Menus.h"
+
+#define MAXClientes 100
+
+int main() {
+	setbuf(stdout, NULL);
+	int opcionMenuPrincipal;
+	eCliente listaClientes[MAXClientes];
+
+	int retornoFuncion;
+	int id;
+	int idIngresado;
+
+	id = 1000;
+
+
+
+	InicializarClientes(listaClientes, MAXClientes);
+
+	do{
+		opcionMenuPrincipal = MostrarMenuPrincpial("", 1, 10, "La opcion ingresada no existe, intente nuevamente.\n");
+		switch (opcionMenuPrincipal){
+			case 1:
+				retornoFuncion = BuscarEspacioLibre(listaClientes, MAXClientes);
+				if(retornoFuncion != -1){
+					CargarNuevoCliente(listaClientes, MAXClientes, &id);
+					retornoFuncion = MostrarClientes(listaClientes, MAXClientes);
+				}
+				break;
+			case 2:
+				idIngresado = GetInt("Por favor, ingrese el ID del cliente: \n", 1000, 1000000, "El ID ingresado no existe.");
+				if (BuscarClientePorId(listaClientes, MAXClientes, idIngresado) != -1){
+					retornoFuncion = ModificarDireccion(listaClientes, MAXClientes, idIngresado, "Por favor, ingrese la nueva direccion");
+					retornoFuncion = ModificarLocalidad(listaClientes, MAXClientes, idIngresado, "Por favor, ingrese la nueva direccion");
+				}
+				break;
+			case 3:
+			case 4:
+			case 5:
+			case 6:
+			case 7:
+			case 8:
+			case 9:
+			case 10:
+			case 11:
+				break;
+		}
+
+
+	}while(opcionMenuPrincipal != 11);
+
+	return 0;
+}

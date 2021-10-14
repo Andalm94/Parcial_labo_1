@@ -1,0 +1,1725 @@
+11:58:39 **** Rebuild of configuration Debug for project Parcial_Labo_1 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo_1.o" "..\\src\\Parcial_Labo_1.cpp" 
+g++ -o Parcial_Labo_1.exe "src\\Parcial_Labo_1.o" 
+Info: Nothing to build for Parcial_Labo_1
+12:22:46 **** Incremental Build of configuration Debug for project Parcial_Labo_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Inputs.o" "..\\src\\Inputs.c" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo_1.o" "..\\src\\Parcial_Labo_1.cpp" 
+..\src\Parcial_Labo_1.cpp:12:1: error: missing type-name in typedef-declaration
+   12 | };
+      | ^
+12:23:19 **** Incremental Build of configuration Debug for project Parcial_Labo_1 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo_1.o" "..\\src\\Parcial_Labo_1.cpp" 
+g++ -o Parcial_Labo_1.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Parcial_Labo_1.o" 
+12:39:12 **** Incremental Build of configuration Debug for project Parcial_Labo_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Inputs.o" "..\\src\\Inputs.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+..\src\ManejoStructs.c: In function 'IngresarDatos':
+..\src\ManejoStructs.c:10:68: warning: overflow in conversion from 'long long int' to 'int' changes value from '99999999999' to '1215752191' [-Woverflow]
+   10 |  *cuit = GetInt("Por favor, ingrese el cuit de la empresa: \n", 0, 99999999999, "El numero ingresado es invalido, intente nuevamente");
+      |                                                                    ^~~~~~~~~~~
+g++ -o Parcial_Labo_1.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Parcial_Labo_1.o" 
+12:39:37 **** Incremental Build of configuration Debug for project Parcial_Labo_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+g++ -o Parcial_Labo_1.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Parcial_Labo_1.o" 
+12:50:04 **** Incremental Build of configuration Debug for project Parcial_Labo_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+..\src\ManejoStructs.c: In function 'MostrarClientes':
+..\src\ManejoStructs.c:30:2: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   30 |  printf("ID\t||EMPRESA\t||CUIT\t||DIRECCION\t||LOCALIDAD\t\n");
+      |  ^~~~~~
+..\src\ManejoStructs.c:30:2: warning: incompatible implicit declaration of built-in function 'printf'
+..\src\ManejoStructs.c:2:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+    1 | #include "Inputs.h"
+  +++ |+#include <stdio.h>
+    2 | 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo_1.o" "..\\src\\Parcial_Labo_1.cpp" 
+..\src\Parcial_Labo_1.cpp: In function 'int main()':
+..\src\Parcial_Labo_1.cpp:16:31: error: incompatible types in assignment of 'const char [5]' to 'char [50]'
+   16 |  listaClientes[0].direccion = "hola";
+      |                               ^~~~~~
+..\src\Parcial_Labo_1.cpp:17:31: error: incompatible types in assignment of 'const char [5]' to 'char [20]'
+   17 |  listaClientes[0].localidad = "CABA";
+      |                               ^~~~~~
+12:51:00 **** Incremental Build of configuration Debug for project Parcial_Labo_1 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo_1.o" "..\\src\\Parcial_Labo_1.cpp" 
+..\src\Parcial_Labo_1.cpp: In function 'int main()':
+..\src\Parcial_Labo_1.cpp:16:72: error: incompatible types in assignment of 'char*' to 'char [50]'
+   16 |  listaClientes[0].direccion = strcpy(listaClientes[0].direccion, "CABA");
+      |                                                                        ^
+..\src\Parcial_Labo_1.cpp:17:72: error: incompatible types in assignment of 'char*' to 'char [20]'
+   17 |  listaClientes[0].localidad = strcpy(listaClientes[0].localidad, "CABA");
+      |                                                                        ^
+12:52:15 **** Incremental Build of configuration Debug for project Parcial_Labo_1 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo_1.o" "..\\src\\Parcial_Labo_1.cpp" 
+g++ -o Parcial_Labo_1.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Parcial_Labo_1.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Parcial_Labo_1.o: in function `main':
+C:\Users\Andres\Desktop\UTN\1er Cuatri\Programacion1\Parciales Labo\Parcial1\Parcial_Labo_1\Debug/../src/Parcial_Labo_1.cpp:19: undefined reference to `MostrarClientes(eCliente*, int)'
+collect2.exe: error: ld returned 1 exit status
+12:53:33 **** Incremental Build of configuration Debug for project Parcial_Labo_1 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo_1.o" "..\\src\\Parcial_Labo_1.cpp" 
+..\src\Parcial_Labo_1.cpp: In function 'int main()':
+..\src\Parcial_Labo_1.cpp:14:6: warning: variable 'retorno' set but not used [-Wunused-but-set-variable]
+   14 |  int retorno;
+      |      ^~~~~~~
+g++ -o Parcial_Labo_1.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Parcial_Labo_1.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Parcial_Labo_1.o: in function `main':
+C:\Users\Andres\Desktop\UTN\1er Cuatri\Programacion1\Parciales Labo\Parcial1\Parcial_Labo_1\Debug/../src/Parcial_Labo_1.cpp:22: undefined reference to `MostrarClientes(eCliente*, int)'
+collect2.exe: error: ld returned 1 exit status
+12:54:42 **** Incremental Build of configuration Debug for project Parcial_Labo_1 ****
+Info: Internal Builder is used for build
+g++ -o Parcial_Labo_1.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Parcial_Labo_1.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Parcial_Labo_1.o: in function `main':
+C:\Users\Andres\Desktop\UTN\1er Cuatri\Programacion1\Parciales Labo\Parcial1\Parcial_Labo_1\Debug/../src/Parcial_Labo_1.cpp:22: undefined reference to `MostrarClientes(eCliente*, int)'
+collect2.exe: error: ld returned 1 exit status
+12:55:12 **** Incremental Build of configuration Debug for project Parcial_Labo_1 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo_1.o" "..\\src\\Parcial_Labo_1.cpp" 
+..\src\Parcial_Labo_1.cpp: In function 'int main()':
+..\src\Parcial_Labo_1.cpp:14:6: warning: variable 'retorno' set but not used [-Wunused-but-set-variable]
+   14 |  int retorno;
+      |      ^~~~~~~
+g++ -o Parcial_Labo_1.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Parcial_Labo_1.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Parcial_Labo_1.o: in function `main':
+C:\Users\Andres\Desktop\UTN\1er Cuatri\Programacion1\Parciales Labo\Parcial1\Parcial_Labo_1\Debug/../src/Parcial_Labo_1.cpp:22: undefined reference to `MostrarClientes(eCliente*, int)'
+collect2.exe: error: ld returned 1 exit status
+12:55:28 **** Incremental Build of configuration Debug for project Parcial_Labo_1 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo_1.o" "..\\src\\Parcial_Labo_1.cpp" 
+..\src\Parcial_Labo_1.cpp: In function 'int main()':
+..\src\Parcial_Labo_1.cpp:14:6: warning: variable 'retorno' set but not used [-Wunused-but-set-variable]
+   14 |  int retorno;
+      |      ^~~~~~~
+g++ -o Parcial_Labo_1.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Parcial_Labo_1.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Parcial_Labo_1.o: in function `main':
+C:\Users\Andres\Desktop\UTN\1er Cuatri\Programacion1\Parciales Labo\Parcial1\Parcial_Labo_1\Debug/../src/Parcial_Labo_1.cpp:22: undefined reference to `MostrarClientes(eCliente*, int)'
+collect2.exe: error: ld returned 1 exit status
+13:00:14 **** Incremental Build of configuration Debug for project Parcial_Labo_1 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo_1.o" "..\\src\\Parcial_Labo_1.cpp" 
+..\src\Parcial_Labo_1.cpp: In function 'int main()':
+..\src\Parcial_Labo_1.cpp:14:6: warning: unused variable 'retorno' [-Wunused-variable]
+   14 |  int retorno;
+      |      ^~~~~~~
+g++ -o Parcial_Labo_1.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Parcial_Labo_1.o" 
+13:00:37 **** Incremental Build of configuration Debug for project Parcial_Labo_1 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo_1.o" "..\\src\\Parcial_Labo_1.cpp" 
+g++ -o Parcial_Labo_1.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Parcial_Labo_1.o" 
+13:00:44 **** Incremental Build of configuration Debug for project Parcial_Labo_1 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo_1.o" "..\\src\\Parcial_Labo_1.cpp" 
+g++ -o Parcial_Labo_1.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Parcial_Labo_1.o" 
+13:23:03 **** Incremental Build of configuration Debug for project Parcial_Labo_1 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo_1.o" "..\\src\\Parcial_Labo_1.cpp" 
+..\src\Parcial_Labo_1.cpp: In function 'int main()':
+..\src\Parcial_Labo_1.cpp:17:32: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   17 |   opcionMenuPrincipal = GetInt("", 1, 10, "La opcion ingresada no existe, intente nuevamente.");
+      |                                ^~
+..\src\Parcial_Labo_1.cpp:17:43: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   17 |   opcionMenuPrincipal = GetInt("", 1, 10, "La opcion ingresada no existe, intente nuevamente.");
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Parcial_Labo_1.cpp:22:9: error: expected 'while' before numeric constant
+   22 |  return 0;
+      |         ^
+..\src\Parcial_Labo_1.cpp:22:9: error: expected '(' before numeric constant
+   22 |  return 0;
+      |         ^
+      |         (
+..\src\Parcial_Labo_1.cpp:22:10: error: expected ')' before ';' token
+   22 |  return 0;
+      |         ~^
+      |          )
+..\src\Parcial_Labo_1.cpp:14:11: warning: unused variable 'listaClientes' [-Wunused-variable]
+   14 |  eCliente listaClientes[MAXClientes];
+      |           ^~~~~~~~~~~~~
+13:23:33 **** Incremental Build of configuration Debug for project Parcial_Labo_1 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo_1.o" "..\\src\\Parcial_Labo_1.cpp" 
+..\src\Parcial_Labo_1.cpp: In function 'int main()':
+..\src\Parcial_Labo_1.cpp:17:32: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   17 |   opcionMenuPrincipal = GetInt("", 1, 10, "La opcion ingresada no existe, intente nuevamente.");
+      |                                ^~
+..\src\Parcial_Labo_1.cpp:17:43: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   17 |   opcionMenuPrincipal = GetInt("", 1, 10, "La opcion ingresada no existe, intente nuevamente.");
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Parcial_Labo_1.cpp:20:29: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+   20 |  }while(opcionMenuPrincipal =! 11);
+      |         ~~~~~~~~~~~~~~~~~~~~^~~~~
+..\src\Parcial_Labo_1.cpp:14:11: warning: unused variable 'listaClientes' [-Wunused-variable]
+   14 |  eCliente listaClientes[MAXClientes];
+      |           ^~~~~~~~~~~~~
+g++ -o Parcial_Labo_1.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Parcial_Labo_1.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Parcial_Labo_1.o: in function `main':
+C:\Users\Andres\Desktop\UTN\1er Cuatri\Programacion1\Parciales Labo\Parcial1\Parcial_Labo_1\Debug/../src/Parcial_Labo_1.cpp:17: undefined reference to `GetInt(char*, int, int, char*)'
+collect2.exe: error: ld returned 1 exit status
+13:25:36 **** Incremental Build of configuration Debug for project Parcial_Labo_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+..\src\ManejoStructs.c: In function 'MostrarClientes':
+..\src\ManejoStructs.c:31:2: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   31 |  printf("ID\t||EMPRESA\t||CUIT\t||DIRECCION\t||LOCALIDAD\t\n");
+      |  ^~~~~~
+..\src\ManejoStructs.c:31:2: warning: incompatible implicit declaration of built-in function 'printf'
+..\src\ManejoStructs.c:3:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+    2 | #include "manejoStructs.h"
+  +++ |+#include <stdio.h>
+    3 | 
+g++ -o Parcial_Labo_1.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Parcial_Labo_1.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Parcial_Labo_1.o: in function `main':
+C:\Users\Andres\Desktop\UTN\1er Cuatri\Programacion1\Parciales Labo\Parcial1\Parcial_Labo_1\Debug/../src/Parcial_Labo_1.cpp:17: undefined reference to `GetInt(char*, int, int, char*)'
+collect2.exe: error: ld returned 1 exit status
+13:25:57 **** Incremental Build of configuration Debug for project Parcial_Labo_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+g++ -o Parcial_Labo_1.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Parcial_Labo_1.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Parcial_Labo_1.o: in function `main':
+C:\Users\Andres\Desktop\UTN\1er Cuatri\Programacion1\Parciales Labo\Parcial1\Parcial_Labo_1\Debug/../src/Parcial_Labo_1.cpp:17: undefined reference to `GetInt(char*, int, int, char*)'
+collect2.exe: error: ld returned 1 exit status
+13:26:05 **** Incremental Build of configuration Debug for project Parcial_Labo_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Inputs.o" "..\\src\\Inputs.c" 
+g++ -o Parcial_Labo_1.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Parcial_Labo_1.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Parcial_Labo_1.o: in function `main':
+C:\Users\Andres\Desktop\UTN\1er Cuatri\Programacion1\Parciales Labo\Parcial1\Parcial_Labo_1\Debug/../src/Parcial_Labo_1.cpp:17: undefined reference to `GetInt(char*, int, int, char*)'
+collect2.exe: error: ld returned 1 exit status
+13:26:58 **** Incremental Build of configuration Debug for project Parcial_Labo_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo_1.o" "..\\src\\Parcial_Labo_1.c" 
+..\src\Parcial_Labo_1.c: In function 'main':
+..\src\Parcial_Labo_1.c:20:9: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+   20 |  }while(opcionMenuPrincipal =! 11);
+      |         ^~~~~~~~~~~~~~~~~~~
+..\src\Parcial_Labo_1.c:14:11: warning: unused variable 'listaClientes' [-Wunused-variable]
+   14 |  eCliente listaClientes[MAXClientes];
+      |           ^~~~~~~~~~~~~
+g++ -o Parcial_Labo_1.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Parcial_Labo_1.o" "src\\Parcial_Labo_1.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Parcial_Labo_1.o: in function `main':
+C:\Users\Andres\Desktop\UTN\1er Cuatri\Programacion1\Parciales Labo\Parcial1\Parcial_Labo_1\Debug/../src/Parcial_Labo_1.c:11: multiple definition of `main'; src\Parcial_Labo_1.o:C:\Users\Andres\Desktop\UTN\1er Cuatri\Programacion1\Parciales Labo\Parcial1\Parcial_Labo_1\Debug/../src/Parcial_Labo_1.c:11: first defined here
+collect2.exe: error: ld returned 1 exit status
+13:30:38 **** Rebuild of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Inputs.o" "..\\src\\Inputs.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo.o" "..\\src\\Parcial_Labo.c" 
+..\src\Parcial_Labo.c: In function 'main':
+..\src\Parcial_Labo.c:20:9: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+   20 |  }while(opcionMenuPrincipal =! 11);
+      |         ^~~~~~~~~~~~~~~~~~~
+..\src\Parcial_Labo.c:14:11: warning: unused variable 'listaClientes' [-Wunused-variable]
+   14 |  eCliente listaClientes[MAXClientes];
+      |           ^~~~~~~~~~~~~
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Parcial_Labo.o" 
+13:30:39 **** Incremental Build of configuration Debug for project Parcial_Labo_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+g++ -o Parcial_Labo_1.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Parcial_Labo_1.o" 
+Info: Nothing to build for Parcial_Labo
+13:31:47 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo.o" "..\\src\\Parcial_Labo.c" 
+..\src\Parcial_Labo.c: In function 'main':
+..\src\Parcial_Labo.c:20:9: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+   20 |  }while(opcionMenuPrincipal =! 11);
+      |         ^~~~~~~~~~~~~~~~~~~
+..\src\Parcial_Labo.c:14:11: warning: unused variable 'listaClientes' [-Wunused-variable]
+   14 |  eCliente listaClientes[MAXClientes];
+      |           ^~~~~~~~~~~~~
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Parcial_Labo.o" 
+Info: Nothing to build for Parcial_Labo
+13:53:01 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Inputs.o" "..\\src\\Inputs.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo.o" "..\\src\\Parcial_Labo.c" 
+..\src\Parcial_Labo.c: In function 'main':
+..\src\Parcial_Labo.c:45:9: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+   45 |  }while(opcionMenuPrincipal =! 11);
+      |         ^~~~~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+..\src\ManejoStructs.c:13:6: error: conflicting types for 'InicializarClientes'
+   13 | void InicializarClientes(eCliente* list, int tam){
+      |      ^~~~~~~~~~~~~~~~~~~
+In file included from ..\src\ManejoStructs.c:7:
+..\src\ManejoStructs.h:7:5: note: previous declaration of 'InicializarClientes' was here
+    7 | int InicializarClientes(eCliente* list, int tam);
+      |     ^~~~~~~~~~~~~~~~~~~
+..\src\ManejoStructs.c: In function 'CargarNuevoCliente':
+..\src\ManejoStructs.c:62:23: error: assignment to expression with array type
+   62 |   list[index].empresa = GetString("Por favor, ingrese el nombre de la empresa: \n", list[index].empresa, 50);
+      |                       ^
+..\src\ManejoStructs.c:64:25: error: assignment to expression with array type
+   64 |   list[index].direccion = GetString("Por favor, ingrese la direccion de la empresa: \n", list[index].direccion, 50);
+      |                         ^
+..\src\ManejoStructs.c:65:25: error: assignment to expression with array type
+   65 |   list[index].localidad = GetString("Por favor, ingrese la localidad: \n", list[index].localidad, 20);
+      |                         ^
+14:06:47 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+..\src\ManejoStructs.c: In function 'CargarNuevoCliente':
+..\src\ManejoStructs.c:67:20: error: assignment to expression with array type
+   67 |   empresaIngresada = GetString("Por favor, ingrese el nombre de la empresa: \n", list[index].empresa, 50);
+      |                    ^
+..\src\ManejoStructs.c:68:23: error: assignment to expression with array type
+   68 |   list[index].empresa = strcpy(list[index].empresa, empresaIngresada);
+      |                       ^
+..\src\ManejoStructs.c:70:22: error: assignment to expression with array type
+   70 |   direccionIngresada = GetString("Por favor, ingrese la direccion de la empresa: \n", list[index].direccion, 50);
+      |                      ^
+..\src\ManejoStructs.c:71:25: error: assignment to expression with array type
+   71 |   list[index].direccion = strcpy(list[index].direccion, direccionIngresada);
+      |                         ^
+..\src\ManejoStructs.c:72:22: error: assignment to expression with array type
+   72 |   localidadIngresada = GetString("Por favor, ingrese la localidad: \n", list[index].localidad, 20);
+      |                      ^
+..\src\ManejoStructs.c:73:25: error: assignment to expression with array type
+   73 |   list[index].localidad = strcpy(list[index].localidad, localidadIngresada);
+      |                         ^
+14:14:27 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+..\src\ManejoStructs.c: In function 'IngresarDatos':
+..\src\ManejoStructs.c:54:10: error: void value not ignored as it ought to be
+   54 |  empresa = GetString("Por favor, ingrese el nombre de la empresa: \n", empresa, 50);
+      |          ^
+..\src\ManejoStructs.c:56:12: error: void value not ignored as it ought to be
+   56 |  direccion = GetString("Por favor, ingrese la direccion de la empresa: \n", direccion, 50);
+      |            ^
+..\src\ManejoStructs.c:57:12: error: void value not ignored as it ought to be
+   57 |  localidad = GetString("Por favor, ingrese la localidad: \n", localidad, 20);
+      |            ^
+..\src\ManejoStructs.c: In function 'CargarNuevoCliente':
+..\src\ManejoStructs.c:76:23: error: assignment to expression with array type
+   76 |   list[index].empresa = empresa;
+      |                       ^
+..\src\ManejoStructs.c:78:25: error: assignment to expression with array type
+   78 |   list[index].direccion = direccion;
+      |                         ^
+..\src\ManejoStructs.c:79:25: error: assignment to expression with array type
+   79 |   list[index].localidad = localidad;
+      |                         ^
+14:17:15 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Inputs.o" "..\\src\\Inputs.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+..\src\ManejoStructs.c: In function 'CargarNuevoCliente':
+..\src\ManejoStructs.c:76:23: error: assignment to expression with array type
+   76 |   list[index].empresa = empresa;
+      |                       ^
+..\src\ManejoStructs.c:78:25: error: assignment to expression with array type
+   78 |   list[index].direccion = direccion;
+      |                         ^
+..\src\ManejoStructs.c:79:25: error: assignment to expression with array type
+   79 |   list[index].localidad = localidad;
+      |                         ^
+14:19:49 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+..\src\ManejoStructs.c: In function 'CargarNuevoCliente':
+..\src\ManejoStructs.c:76:39: error: expected ';' before 'list'
+   76 |   strcpy(list[index].empresa, empresa)
+      |                                       ^
+      |                                       ;
+   77 |   list[index].cuit = cuit;
+      |   ~~~~                                 
+14:19:54 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo.o" "..\\src\\Parcial_Labo.c" 
+..\src\Parcial_Labo.c: In function 'main':
+..\src\Parcial_Labo.c:45:9: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+   45 |  }while(opcionMenuPrincipal =! 11);
+      |         ^~~~~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Parcial_Labo.o" 
+16:20:20 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+..\src\ManejoStructs.c: In function 'AsignarId':
+..\src\ManejoStructs.c:95:13: warning: assignment to 'int' from 'int *' makes integer from pointer without a cast [-Wint-conversion]
+   95 |  idAsignado = id;
+      |             ^
+..\src\ManejoStructs.c:96:6: warning: assignment to 'int' from 'int *' makes integer from pointer without a cast [-Wint-conversion]
+   96 |  *id = id++;
+      |      ^
+..\src\ManejoStructs.c:96:10: warning: operation on 'id' may be undefined [-Wsequence-point]
+   96 |  *id = id++;
+      |        ~~^~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo.o" "..\\src\\Parcial_Labo.c" 
+..\src\Parcial_Labo.c: In function 'main':
+..\src\Parcial_Labo.c:46:9: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+   46 |  }while(opcionMenuPrincipal =! 11);
+      |         ^~~~~~~~~~~~~~~~~~~
+..\src\Parcial_Labo.c:17:6: warning: unused variable 'idAsignado' [-Wunused-variable]
+   17 |  int idAsignado;
+      |      ^~~~~~~~~~
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Parcial_Labo.o" 
+16:20:51 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+..\src\ManejoStructs.c: In function 'AsignarId':
+..\src\ManejoStructs.c:96:11: warning: operation on 'id' may be undefined [-Wsequence-point]
+   96 |  *id = *id++;
+      |         ~~^~
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Parcial_Labo.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Parcial_Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+16:21:08 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Parcial_Labo.o" 
+Info: Nothing to build for Parcial_Labo
+16:23:11 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo.o" "..\\src\\Parcial_Labo.c" 
+..\src\Parcial_Labo.c:1:19: warning: extra tokens at end of #include directive
+    1 | #include <stdio.h>1
+      |                   ^
+..\src\Parcial_Labo.c: In function 'main':
+..\src\Parcial_Labo.c:30:6: error: 'retornoFUncion' undeclared (first use in this function); did you mean 'retornoFuncion'?
+   30 |      retornoFUncion = MostrarClientes(listaClientes, MAXClientes);
+      |      ^~~~~~~~~~~~~~
+      |      retornoFuncion
+..\src\Parcial_Labo.c:30:6: note: each undeclared identifier is reported only once for each function it appears in
+..\src\Parcial_Labo.c:47:9: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+   47 |  }while(opcionMenuPrincipal =! 11);
+      |         ^~~~~~~~~~~~~~~~~~~
+..\src\Parcial_Labo.c:17:6: warning: unused variable 'idAsignado' [-Wunused-variable]
+   17 |  int idAsignado;
+      |      ^~~~~~~~~~
+16:23:16 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo.o" "..\\src\\Parcial_Labo.c" 
+..\src\Parcial_Labo.c:1:19: warning: extra tokens at end of #include directive
+    1 | #include <stdio.h>1
+      |                   ^
+..\src\Parcial_Labo.c: In function 'main':
+..\src\Parcial_Labo.c:47:9: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+   47 |  }while(opcionMenuPrincipal =! 11);
+      |         ^~~~~~~~~~~~~~~~~~~
+..\src\Parcial_Labo.c:17:6: warning: unused variable 'idAsignado' [-Wunused-variable]
+   17 |  int idAsignado;
+      |      ^~~~~~~~~~
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Parcial_Labo.o" 
+16:25:48 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Inputs.o" "..\\src\\Inputs.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+..\src\ManejoStructs.c:60:5: error: conflicting types for 'CargarNuevoCliente'
+   60 | int CargarNuevoCliente(eCliente* list, int tam, int* id){
+      |     ^~~~~~~~~~~~~~~~~~
+In file included from ..\src\ManejoStructs.c:7:
+..\src\ManejoStructs.h:11:5: note: previous declaration of 'CargarNuevoCliente' was here
+   11 | int CargarNuevoCliente(eCliente* list, int tam);
+      |     ^~~~~~~~~~~~~~~~~~
+..\src\ManejoStructs.c: In function 'AsignarId':
+..\src\ManejoStructs.c:96:11: warning: operation on 'id' may be undefined [-Wsequence-point]
+   96 |  *id = *id++;
+      |         ~~^~
+16:26:07 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+..\src\ManejoStructs.c: In function 'AsignarId':
+..\src\ManejoStructs.c:96:11: warning: operation on 'id' may be undefined [-Wsequence-point]
+   96 |  *id = *id++;
+      |         ~~^~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Inputs.o" "..\\src\\Inputs.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo.o" "..\\src\\Parcial_Labo.c" 
+..\src\Parcial_Labo.c:1:19: warning: extra tokens at end of #include directive
+    1 | #include <stdio.h>1
+      |                   ^
+..\src\Parcial_Labo.c: In function 'main':
+..\src\Parcial_Labo.c:29:53: warning: passing argument 3 of 'CargarNuevoCliente' makes pointer from integer without a cast [-Wint-conversion]
+   29 |      CargarNuevoCliente(listaClientes, MAXClientes, id);
+      |                                                     ^~
+      |                                                     |
+      |                                                     int
+In file included from ..\src\Parcial_Labo.c:7:
+..\src\ManejoStructs.h:11:54: note: expected 'int *' but argument is of type 'int'
+   11 | int CargarNuevoCliente(eCliente* list, int tam, int* id);
+      |                                                 ~~~~~^~
+..\src\Parcial_Labo.c:47:9: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+   47 |  }while(opcionMenuPrincipal =! 11);
+      |         ^~~~~~~~~~~~~~~~~~~
+..\src\Parcial_Labo.c:29:6: warning: 'id' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   29 |      CargarNuevoCliente(listaClientes, MAXClientes, id);
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Parcial_Labo.o" 
+16:26:39 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo.o" "..\\src\\Parcial_Labo.c" 
+..\src\Parcial_Labo.c:1:19: warning: extra tokens at end of #include directive
+    1 | #include <stdio.h>1
+      |                   ^
+..\src\Parcial_Labo.c: In function 'main':
+..\src\Parcial_Labo.c:31:53: warning: passing argument 3 of 'CargarNuevoCliente' makes pointer from integer without a cast [-Wint-conversion]
+   31 |      CargarNuevoCliente(listaClientes, MAXClientes, id);
+      |                                                     ^~
+      |                                                     |
+      |                                                     int
+In file included from ..\src\Parcial_Labo.c:7:
+..\src\ManejoStructs.h:11:54: note: expected 'int *' but argument is of type 'int'
+   11 | int CargarNuevoCliente(eCliente* list, int tam, int* id);
+      |                                                 ~~~~~^~
+..\src\Parcial_Labo.c:49:9: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+   49 |  }while(opcionMenuPrincipal =! 11);
+      |         ^~~~~~~~~~~~~~~~~~~
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Parcial_Labo.o" 
+Info: Nothing to build for Parcial_Labo
+16:27:13 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo.o" "..\\src\\Parcial_Labo.c" 
+..\src\Parcial_Labo.c:1:19: warning: extra tokens at end of #include directive
+    1 | #include <stdio.h>1
+      |                   ^
+..\src\Parcial_Labo.c: In function 'main':
+..\src\Parcial_Labo.c:49:9: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+   49 |  }while(opcionMenuPrincipal =! 11);
+      |         ^~~~~~~~~~~~~~~~~~~
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Parcial_Labo.o" 
+16:27:36 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo.o" "..\\src\\Parcial_Labo.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Parcial_Labo.o" 
+Info: Nothing to build for Parcial_Labo
+15:41:00 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo.o" "..\\src\\Parcial_Labo.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Parcial_Labo.o" 
+Info: Nothing to build for Parcial_Labo
+15:46:12 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo.o" "..\\src\\Parcial_Labo.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Parcial_Labo.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Parcial_Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+15:46:17 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Parcial_Labo.o" 
+Info: Nothing to build for Parcial_Labo
+15:47:53 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+..\src\ManejoStructs.c: In function 'AsignarId':
+..\src\ManejoStructs.c:96:11: warning: operation on 'id' may be undefined [-Wsequence-point]
+   96 |  *id = *id++;
+      |         ~~^~
+..\src\ManejoStructs.c:99:44: warning: format '%d' expects argument of type 'int', but argument 2 has type 'int *' [-Wformat=]
+   99 |  printf("ID puntero dentro de la funcion: %d\n", id);
+      |                                           ~^     ~~
+      |                                            |     |
+      |                                            int   int *
+      |                                           %n
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Parcial_Labo.o" 
+15:48:13 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo.o" "..\\src\\Parcial_Labo.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Parcial_Labo.o" 
+15:48:58 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+..\src\ManejoStructs.c: In function 'AsignarId':
+..\src\ManejoStructs.c:99:44: warning: format '%d' expects argument of type 'int', but argument 2 has type 'int *' [-Wformat=]
+   99 |  printf("ID puntero dentro de la funcion: %d\n", id);
+      |                                           ~^     ~~
+      |                                            |     |
+      |                                            int   int *
+      |                                           %n
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Parcial_Labo.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Parcial_Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+15:49:08 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Parcial_Labo.o" 
+Info: Nothing to build for Parcial_Labo
+16:29:56 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Menus.o" "..\\src\\Menus.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Inputs.o" "..\\src\\Inputs.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo.o" "..\\src\\Parcial_Labo.c" 
+..\src\Parcial_Labo.c: In function 'main':
+..\src\Parcial_Labo.c:28:25: warning: implicit declaration of function 'MostrarMenuPrincpial'; did you mean 'MostrarMenuPrincipal'? [-Wimplicit-function-declaration]
+   28 |   opcionMenuPrincipal = MostrarMenuPrincpial("", 1, 10, "La opcion ingresada no existe, intente nuevamente.\n");
+      |                         ^~~~~~~~~~~~~~~~~~~~
+      |                         MostrarMenuPrincipal
+..\src\Parcial_Labo.c:38:19: error: too few arguments to function 'GetInt'
+   38 |     idIngresado = GetInt("Por favor, ingrese el ID del cliente: \n");
+      |                   ^~~~~~
+In file included from ..\src\Parcial_Labo.c:6:
+..\src\Inputs.h:13:5: note: declared here
+   13 | int GetInt(char mensaje[], int min, int max, char mensajeError[]);//
+      |     ^~~~~~
+16:31:15 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Menus.o" "..\\src\\Menus.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo.o" "..\\src\\Parcial_Labo.c" 
+..\src\Parcial_Labo.c: In function 'main':
+..\src\Parcial_Labo.c:28:25: warning: implicit declaration of function 'MostrarMenuPrincpial'; did you mean 'MostrarMenuPrincipal'? [-Wimplicit-function-declaration]
+   28 |   opcionMenuPrincipal = MostrarMenuPrincpial("", 1, 10, "La opcion ingresada no existe, intente nuevamente.\n");
+      |                         ^~~~~~~~~~~~~~~~~~~~
+      |                         MostrarMenuPrincipal
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Inputs.o" "..\\src\\Inputs.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Parcial_Labo.o: in function `main':
+C:\Users\Andres\Desktop\UTN\1er Cuatri\Programacion1\Parciales Labo\Parcial1\Parcial_Labo\Debug/../src/Parcial_Labo.c:28: undefined reference to `MostrarMenuPrincpial'
+collect2.exe: error: ld returned 1 exit status
+16:31:51 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo.o" "..\\src\\Parcial_Labo.c" 
+..\src\Parcial_Labo.c: In function 'main':
+..\src\Parcial_Labo.c:28:25: warning: implicit declaration of function 'MostrarMenuPrincipial'; did you mean 'MostrarMenuPrincipal'? [-Wimplicit-function-declaration]
+   28 |   opcionMenuPrincipal = MostrarMenuPrincipial("", 1, 10, "La opcion ingresada no existe, intente nuevamente.\n");
+      |                         ^~~~~~~~~~~~~~~~~~~~~
+      |                         MostrarMenuPrincipal
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Parcial_Labo.o: in function `main':
+C:\Users\Andres\Desktop\UTN\1er Cuatri\Programacion1\Parciales Labo\Parcial1\Parcial_Labo\Debug/../src/Parcial_Labo.c:28: undefined reference to `MostrarMenuPrincipial'
+collect2.exe: error: ld returned 1 exit status
+16:32:16 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo.o" "..\\src\\Parcial_Labo.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+Info: Nothing to build for Parcial_Labo
+19:57:18 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo.o" "..\\src\\Parcial_Labo.c" 
+..\src\Parcial_Labo.c: In function 'main':
+..\src\Parcial_Labo.c:38:23: warning: implicit declaration of function 'MostrarUnCliente'; did you mean 'MostrarClientes'? [-Wimplicit-function-declaration]
+   38 |      retornoFuncion = MostrarUnCliente(listaClientes, MAXClientes, idCliente);
+      |                       ^~~~~~~~~~~~~~~~
+      |                       MostrarClientes
+..\src\Parcial_Labo.c:54:23: error: too few arguments to function 'EliminarCliente'
+   54 |      retornoFuncion = EliminarCliente(listaClientes, MAXClientes, idIngresado);
+      |                       ^~~~~~~~~~~~~~~
+In file included from ..\src\Parcial_Labo.c:7:
+..\src\ManejoStructs.h:19:5: note: declared here
+   19 | int EliminarCliente(eCliente* list, int tam, int id, char mensaje[]);
+      |     ^~~~~~~~~~~~~~~
+..\src\Parcial_Labo.c:64:75: error: incompatible type for argument 3 of 'CrearPedidoDeRecoleccion'
+   64 |     retornoFuncion = CrearPedidoDeRecoleccion(listaClientes, MAXClientes, listaPedidos, MAXPedidos, &idPedido);
+      |                                                                           ^~~~~~~~~~~~
+      |                                                                           |
+      |                                                                           ePedido * {aka struct <anonymous> *}
+In file included from ..\src\Parcial_Labo.c:7:
+..\src\ManejoStructs.h:21:80: note: expected 'ePedido' {aka 'struct <anonymous>'} but argument is of type 'ePedido *' {aka 'struct <anonymous> *'}
+   21 | int CrearPedidoDeRecoleccion(eCliente* listaClientes, int tamClientes, ePedido listaPedidos, int tamPedidos, int*idPedido);
+      |                                                                        ~~~~~~~~^~~~~~~~~~~~
+20:00:03 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Inputs.o" "..\\src\\Inputs.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo.o" "..\\src\\Parcial_Labo.c" 
+..\src\Parcial_Labo.c: In function 'main':
+..\src\Parcial_Labo.c:38:23: warning: implicit declaration of function 'MostrarUnCliente'; did you mean 'MostrarClientes'? [-Wimplicit-function-declaration]
+   38 |      retornoFuncion = MostrarUnCliente(listaClientes, MAXClientes, idCliente);
+      |                       ^~~~~~~~~~~~~~~~
+      |                       MostrarClientes
+..\src\Parcial_Labo.c:64:75: error: incompatible type for argument 3 of 'CrearPedidoDeRecoleccion'
+   64 |     retornoFuncion = CrearPedidoDeRecoleccion(listaClientes, MAXClientes, listaPedidos, MAXPedidos, &idPedido);
+      |                                                                           ^~~~~~~~~~~~
+      |                                                                           |
+      |                                                                           ePedido * {aka struct <anonymous> *}
+In file included from ..\src\Parcial_Labo.c:7:
+..\src\ManejoStructs.h:21:80: note: expected 'ePedido' {aka 'struct <anonymous>'} but argument is of type 'ePedido *' {aka 'struct <anonymous> *'}
+   21 | int CrearPedidoDeRecoleccion(eCliente* listaClientes, int tamClientes, ePedido listaPedidos, int tamPedidos, int*idPedido);
+      |                                                                        ~~~~~~~~^~~~~~~~~~~~
+20:32:19 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Menus.o" "..\\src\\Menus.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+..\src\ManejoStructs.c: In function 'CargarNuevoCliente':
+..\src\ManejoStructs.c:96:27: warning: implicit declaration of function 'AsignarId' [-Wimplicit-function-declaration]
+   96 |   list[index].idCliente = AsignarId(id);
+      |                           ^~~~~~~~~
+..\src\ManejoStructs.c: In function 'CrearPedidoDeRecoleccion':
+..\src\ManejoStructs.c:199:40: error: incompatible type for argument 1 of 'BuscarEspacioLibreParaPedido'
+  199 |   index = BuscarEspacioLibreParaPedido(listaPedidos, tamPedidos);
+      |                                        ^~~~~~~~~~~~
+      |                                        |
+      |                                        ePedido {aka struct <anonymous>}
+In file included from ..\src\ManejoStructs.c:7:
+..\src\ManejoStructs.h:22:43: note: expected 'ePedido *' {aka 'struct <anonymous> *'} but argument is of type 'ePedido' {aka 'struct <anonymous>'}
+   22 | int BuscarEspacioLibreParaPedido(ePedido* list, int tam);
+      |                                  ~~~~~~~~~^~~~
+..\src\ManejoStructs.c:202:16: error: subscripted value is neither array nor pointer nor vector
+  202 |    listaPedidos[index].kilogramos = kilogramosIngresados;
+      |                ^
+..\src\ManejoStructs.c:203:16: error: subscripted value is neither array nor pointer nor vector
+  203 |    listaPedidos[index].idCliente = idIngresado;
+      |                ^
+..\src\ManejoStructs.c:204:16: error: subscripted value is neither array nor pointer nor vector
+  204 |    listaPedidos[index].idPedido = AsignarIdPedido(&idPedido);
+      |                ^
+..\src\ManejoStructs.c:204:51: warning: passing argument 1 of 'AsignarIdPedido' from incompatible pointer type [-Wincompatible-pointer-types]
+  204 |    listaPedidos[index].idPedido = AsignarIdPedido(&idPedido);
+      |                                                   ^~~~~~~~~
+      |                                                   |
+      |                                                   int **
+In file included from ..\src\ManejoStructs.c:7:
+..\src\ManejoStructs.h:23:26: note: expected 'int *' but argument is of type 'int **'
+   23 | int AsignarIdPedido(int* idPedido);
+      |                     ~~~~~^~~~~~~~
+..\src\ManejoStructs.c:205:16: error: subscripted value is neither array nor pointer nor vector
+  205 |    listaPedidos[index].isEmpty = FULL;
+      |                ^
+..\src\ManejoStructs.c:187:6: warning: variable 'retornoFuncion' set but not used [-Wunused-but-set-variable]
+  187 |  int retornoFuncion;
+      |      ^~~~~~~~~~~~~~
+20:32:57 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo.o" "..\\src\\Parcial_Labo.c" 
+..\src\Parcial_Labo.c: In function 'main':
+..\src\Parcial_Labo.c:30:2: warning: implicit declaration of function 'InicializarPedidos' [-Wimplicit-function-declaration]
+   30 |  InicializarPedidos(listaPedidos, MAXPedidos);
+      |  ^~~~~~~~~~~~~~~~~~
+..\src\Parcial_Labo.c:39:23: warning: implicit declaration of function 'MostrarUnCliente'; did you mean 'MostrarClientes'? [-Wimplicit-function-declaration]
+   39 |      retornoFuncion = MostrarUnCliente(listaClientes, MAXClientes, idCliente);
+      |                       ^~~~~~~~~~~~~~~~
+      |                       MostrarClientes
+..\src\Parcial_Labo.c:65:75: error: incompatible type for argument 3 of 'CrearPedidoDeRecoleccion'
+   65 |     retornoFuncion = CrearPedidoDeRecoleccion(listaClientes, MAXClientes, listaPedidos, MAXPedidos, &idPedido);
+      |                                                                           ^~~~~~~~~~~~
+      |                                                                           |
+      |                                                                           ePedido * {aka struct <anonymous> *}
+In file included from ..\src\Parcial_Labo.c:7:
+..\src\ManejoStructs.h:21:80: note: expected 'ePedido' {aka 'struct <anonymous>'} but argument is of type 'ePedido *' {aka 'struct <anonymous> *'}
+   21 | int CrearPedidoDeRecoleccion(eCliente* listaClientes, int tamClientes, ePedido listaPedidos, int tamPedidos, int*idPedido);
+      |                                                                        ~~~~~~~~^~~~~~~~~~~~
+20:33:28 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+..\src\ManejoStructs.c: In function 'CargarNuevoCliente':
+..\src\ManejoStructs.c:96:27: warning: implicit declaration of function 'AsignarId' [-Wimplicit-function-declaration]
+   96 |   list[index].idCliente = AsignarId(id);
+      |                           ^~~~~~~~~
+..\src\ManejoStructs.c: In function 'CrearPedidoDeRecoleccion':
+..\src\ManejoStructs.c:204:51: warning: passing argument 1 of 'AsignarIdPedido' from incompatible pointer type [-Wincompatible-pointer-types]
+  204 |    listaPedidos[index].idPedido = AsignarIdPedido(&idPedido);
+      |                                                   ^~~~~~~~~
+      |                                                   |
+      |                                                   int **
+In file included from ..\src\ManejoStructs.c:7:
+..\src\ManejoStructs.h:23:26: note: expected 'int *' but argument is of type 'int **'
+   23 | int AsignarIdPedido(int* idPedido);
+      |                     ~~~~~^~~~~~~~
+..\src\ManejoStructs.c:187:6: warning: variable 'retornoFuncion' set but not used [-Wunused-but-set-variable]
+  187 |  int retornoFuncion;
+      |      ^~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Inputs.o" "..\\src\\Inputs.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Menus.o" "..\\src\\Menus.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo.o" "..\\src\\Parcial_Labo.c" 
+..\src\Parcial_Labo.c: In function 'main':
+..\src\Parcial_Labo.c:30:2: warning: implicit declaration of function 'InicializarPedidos' [-Wimplicit-function-declaration]
+   30 |  InicializarPedidos(listaPedidos, MAXPedidos);
+      |  ^~~~~~~~~~~~~~~~~~
+..\src\Parcial_Labo.c:39:23: warning: implicit declaration of function 'MostrarUnCliente'; did you mean 'MostrarClientes'? [-Wimplicit-function-declaration]
+   39 |      retornoFuncion = MostrarUnCliente(listaClientes, MAXClientes, idCliente);
+      |                       ^~~~~~~~~~~~~~~~
+      |                       MostrarClientes
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\ManejoStructs.o: in function `CargarNuevoCliente':
+C:\Users\Andres\Desktop\UTN\1er Cuatri\Programacion1\Parciales Labo\Parcial1\Parcial_Labo\Debug/../src/ManejoStructs.c:96: undefined reference to `AsignarId'
+collect2.exe: error: ld returned 1 exit status
+20:34:22 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+..\src\ManejoStructs.c: In function 'CrearPedidoDeRecoleccion':
+..\src\ManejoStructs.c:195:2: error: 'retornoFuncion' undeclared (first use in this function)
+  195 |  retornoFuncion = MostrarClientes(listaClientes, tamClientes);
+      |  ^~~~~~~~~~~~~~
+..\src\ManejoStructs.c:195:2: note: each undeclared identifier is reported only once for each function it appears in
+..\src\ManejoStructs.c:203:51: warning: passing argument 1 of 'AsignarIdPedido' from incompatible pointer type [-Wincompatible-pointer-types]
+  203 |    listaPedidos[index].idPedido = AsignarIdPedido(&idPedido);
+      |                                                   ^~~~~~~~~
+      |                                                   |
+      |                                                   int **
+In file included from ..\src\ManejoStructs.c:7:
+..\src\ManejoStructs.h:23:26: note: expected 'int *' but argument is of type 'int **'
+   23 | int AsignarIdPedido(int* idPedido);
+      |                     ~~~~~^~~~~~~~
+20:35:43 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+..\src\ManejoStructs.c: In function 'CrearPedidoDeRecoleccion':
+..\src\ManejoStructs.c:204:51: warning: passing argument 1 of 'AsignarIdPedido' from incompatible pointer type [-Wincompatible-pointer-types]
+  204 |    listaPedidos[index].idPedido = AsignarIdPedido(&idPedido);
+      |                                                   ^~~~~~~~~
+      |                                                   |
+      |                                                   int **
+In file included from ..\src\ManejoStructs.c:7:
+..\src\ManejoStructs.h:23:26: note: expected 'int *' but argument is of type 'int **'
+   23 | int AsignarIdPedido(int* idPedido);
+      |                     ~~~~~^~~~~~~~
+..\src\ManejoStructs.c:189:6: warning: variable 'retornoFuncion' set but not used [-Wunused-but-set-variable]
+  189 |  int retornoFuncion;
+      |      ^~~~~~~~~~~~~~
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+20:36:37 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+..\src\ManejoStructs.c: In function 'CrearPedidoDeRecoleccion':
+..\src\ManejoStructs.c:189:6: warning: variable 'retornoFuncion' set but not used [-Wunused-but-set-variable]
+  189 |  int retornoFuncion;
+      |      ^~~~~~~~~~~~~~
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+20:38:14 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+20:49:22 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Menus.o" "..\\src\\Menus.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Inputs.o" "..\\src\\Inputs.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+..\src\ManejoStructs.c: In function 'CrearPedidoDeRecoleccion':
+..\src\ManejoStructs.c:202:24: error: 'ePedido' {aka 'struct <anonymous>'} has no member named 'kilogramos'
+  202 |     listaPedidos[index].kilogramos = kilogramosIngresados;
+      |                        ^
+20:49:38 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo.o" "..\\src\\Parcial_Labo.c" 
+..\src\Parcial_Labo.c: In function 'main':
+..\src\Parcial_Labo.c:30:2: warning: implicit declaration of function 'InicializarPedidos' [-Wimplicit-function-declaration]
+   30 |  InicializarPedidos(listaPedidos, MAXPedidos);
+      |  ^~~~~~~~~~~~~~~~~~
+..\src\Parcial_Labo.c:39:23: warning: implicit declaration of function 'MostrarUnCliente'; did you mean 'MostrarClientes'? [-Wimplicit-function-declaration]
+   39 |      retornoFuncion = MostrarUnCliente(listaClientes, MAXClientes, idCliente);
+      |                       ^~~~~~~~~~~~~~~~
+      |                       MostrarClientes
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+20:50:20 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo.o" "..\\src\\Parcial_Labo.c" 
+..\src\Parcial_Labo.c: In function 'main':
+..\src\Parcial_Labo.c:30:2: warning: implicit declaration of function 'InicializarPedidos' [-Wimplicit-function-declaration]
+   30 |  InicializarPedidos(listaPedidos, MAXPedidos);
+      |  ^~~~~~~~~~~~~~~~~~
+..\src\Parcial_Labo.c:39:23: warning: implicit declaration of function 'MostrarUnCliente'; did you mean 'MostrarClientes'? [-Wimplicit-function-declaration]
+   39 |      retornoFuncion = MostrarUnCliente(listaClientes, MAXClientes, idCliente);
+      |                       ^~~~~~~~~~~~~~~~
+      |                       MostrarClientes
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+20:51:14 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Menus.o" "..\\src\\Menus.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Inputs.o" "..\\src\\Inputs.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo.o" "..\\src\\Parcial_Labo.c" 
+..\src\Parcial_Labo.c: In function 'main':
+..\src\Parcial_Labo.c:39:21: error: void value not ignored as it ought to be
+   39 |      retornoFuncion = MostrarUnCliente(listaClientes, MAXClientes, idCliente);
+      |                     ^
+20:51:29 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo.o" "..\\src\\Parcial_Labo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+21:19:53 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+..\src\ManejoStructs.c:250:106: error: redefinition of parameter 'tamPedidos'
+  250 | void MostrarPedidos(ePedido* listaPedidos, int tamPedidos, eCliente* listaClientes, int tamClientes, int tamPedidos){
+      |                                                                                                      ~~~~^~~~~~~~~~
+..\src\ManejoStructs.c:250:48: note: previous definition of 'tamPedidos' was here
+  250 | void MostrarPedidos(ePedido* listaPedidos, int tamPedidos, eCliente* listaClientes, int tamClientes, int tamPedidos){
+      |                                            ~~~~^~~~~~~~~~
+21:20:19 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+..\src\ManejoStructs.c: In function 'ProcesarResiduos':
+..\src\ManejoStructs.c:247:9: warning: 'succes' is used uninitialized in this function [-Wuninitialized]
+  247 |  return succes;
+      |         ^~~~~~
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+21:21:12 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo.o" "..\\src\\Parcial_Labo.c" 
+..\src\Parcial_Labo.c: In function 'main':
+..\src\Parcial_Labo.c:74:5: warning: implicit declaration of function 'MostrarPedidos' [-Wimplicit-function-declaration]
+   74 |     MostrarPedidos(listaPedidos, MAXPedidos, listaClientes, MAXClientes);
+      |     ^~~~~~~~~~~~~~
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+21:21:31 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Menus.o" "..\\src\\Menus.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo.o" "..\\src\\Parcial_Labo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Inputs.o" "..\\src\\Inputs.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+21:21:39 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo.o" "..\\src\\Parcial_Labo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Inputs.o" "..\\src\\Inputs.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Menus.o" "..\\src\\Menus.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+Info: Nothing to build for Parcial_Labo
+21:24:47 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Parcial_Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+21:24:53 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+Info: Nothing to build for Parcial_Labo
+21:25:43 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Parcial_Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+21:25:49 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+Info: Nothing to build for Parcial_Labo
+21:27:27 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo.o" "..\\src\\Parcial_Labo.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Parcial_Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+21:27:34 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+21:27:40 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+09:02:32 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+..\src\ManejoStructs.c:243:68: error: expected declaration specifiers or '...' before ')' token
+  243 | int ProcesarResiduos(ePedido* list, int id, float kilosIngresados, ){
+      |                                                                    ^
+09:02:42 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+10:08:08 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Inputs.o" "..\\src\\Inputs.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo.o" "..\\src\\Parcial_Labo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+..\src\ManejoStructs.c: In function 'MostrarClientesConPedidosPendientes':
+..\src\ManejoStructs.c:313:20: warning: comparison between pointer and integer
+  313 |   if(listaClientes == FULL){
+      |                    ^~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Menus.o" "..\\src\\Menus.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+Info: Nothing to build for Parcial_Labo
+10:08:59 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+19:54:25 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+..\src\ManejoStructs.c:356:1: error: expected '=', ',', ';', 'asm' or '__attribute__' at end of input
+  356 | int BuscarPedidosPorLocalidad
+      | ^~~
+19:55:24 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo.o" "..\\src\\Parcial_Labo.c" 
+..\src\Parcial_Labo.c: In function 'main':
+..\src\Parcial_Labo.c:77:22: warning: implicit declaration of function 'ProcesarResiduos' [-Wimplicit-function-declaration]
+   77 |     retornoFuncion = ProcesarResiduos(listaPedidos, MAXPedidos, idPedidoSeleccionado, listaClientes, MAXClientes);
+      |                      ^~~~~~~~~~~~~~~~
+..\src\Parcial_Labo.c:86:41: warning: passing argument 1 of 'MostrarClientesConPedidosPendientes' from incompatible pointer type [-Wincompatible-pointer-types]
+   86 |     MostrarClientesConPedidosPendientes(listaPedidos, MAXPedidos, listaClientes, MAXClientes);
+      |                                         ^~~~~~~~~~~~
+      |                                         |
+      |                                         ePedido * {aka struct <anonymous> *}
+In file included from ..\src\Parcial_Labo.c:7:
+..\src\ManejoStructs.h:30:53: note: expected 'eCliente *' {aka 'struct <anonymous> *'} but argument is of type 'ePedido *' {aka 'struct <anonymous> *'}
+   30 | void MostrarClientesConPedidosPendientes (eCliente* listaClientes, int tamClientes);
+      |                                           ~~~~~~~~~~^~~~~~~~~~~~~
+..\src\Parcial_Labo.c:86:5: error: too many arguments to function 'MostrarClientesConPedidosPendientes'
+   86 |     MostrarClientesConPedidosPendientes(listaPedidos, MAXPedidos, listaClientes, MAXClientes);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\Parcial_Labo.c:7:
+..\src\ManejoStructs.h:30:6: note: declared here
+   30 | void MostrarClientesConPedidosPendientes (eCliente* listaClientes, int tamClientes);
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20:08:14 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Inputs.o" "..\\src\\Inputs.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Menus.o" "..\\src\\Menus.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo.o" "..\\src\\Parcial_Labo.c" 
+..\src\Parcial_Labo.c: In function 'main':
+..\src\Parcial_Labo.c:80:22: warning: implicit declaration of function 'ProcesarResiduos' [-Wimplicit-function-declaration]
+   80 |     retornoFuncion = ProcesarResiduos(listaPedidos, MAXPedidos, idPedidoSeleccionado, listaClientes, MAXClientes);
+      |                      ^~~~~~~~~~~~~~~~
+..\src\Parcial_Labo.c:89:5: warning: implicit declaration of function 'MostrarClientesConPedidosPendientes'; did you mean 'MostrarPedidosPendientes'? [-Wimplicit-function-declaration]
+   89 |     MostrarClientesConPedidosPendientes(listaPedidos, MAXPedidos, listaClientes, MAXClientes);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |     MostrarPedidosPendientes
+..\src\Parcial_Labo.c:98:27: warning: implicit declaration of function 'BuscarPedidosPorLocalidad' [-Wimplicit-function-declaration]
+   98 |     pedidosPorLocalidad = BuscarPedidosPorLocalidad("Por favor, ingrese la localidad:\n", listaClientes, MAXClientes);
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+..\src\ManejoStructs.c: In function 'BuscarPedidosPorLocalidad':
+..\src\ManejoStructs.c:360:9: warning: 'succes' is used uninitialized in this function [-Wuninitialized]
+  360 |  return succes;
+      |         ^~~~~~
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+20:57:28 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo.o" "..\\src\\Parcial_Labo.c" 
+..\src\Parcial_Labo.c: In function 'main':
+..\src\Parcial_Labo.c:82:22: warning: implicit declaration of function 'ProcesarResiduos' [-Wimplicit-function-declaration]
+   82 |     retornoFuncion = ProcesarResiduos(listaPedidos, MAXPedidos, idPedidoSeleccionado, listaClientes, MAXClientes);
+      |                      ^~~~~~~~~~~~~~~~
+..\src\Parcial_Labo.c:91:5: warning: implicit declaration of function 'MostrarClientesConPedidosPendientes'; did you mean 'MostrarPedidosPendientes'? [-Wimplicit-function-declaration]
+   91 |     MostrarClientesConPedidosPendientes(listaPedidos, MAXPedidos, listaClientes, MAXClientes);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |     MostrarPedidosPendientes
+..\src\Parcial_Labo.c:100:27: warning: implicit declaration of function 'BuscarPedidosPorLocalidad' [-Wimplicit-function-declaration]
+  100 |     pedidosPorLocalidad = BuscarPedidosPorLocalidad("Por favor, ingrese la localidad:\n", listaClientes, MAXClientes);
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Parcial_Labo.c:106:23: warning: implicit declaration of function 'CalcularKilosPPPorCliente' [-Wimplicit-function-declaration]
+  106 |     promedioKilosPP = CalcularKilosPPPorCliente(listaClientes, MAXClientes, listaPedidos, MAXPedidos);
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+..\src\ManejoStructs.c: In function 'BuscarPedidosPorLocalidad':
+..\src\ManejoStructs.c:358:6: warning: unused variable 'j' [-Wunused-variable]
+  358 |  int j;
+      |      ^
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+20:58:02 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo.o" "..\\src\\Parcial_Labo.c" 
+..\src\Parcial_Labo.c: In function 'main':
+..\src\Parcial_Labo.c:82:22: warning: implicit declaration of function 'ProcesarResiduos' [-Wimplicit-function-declaration]
+   82 |     retornoFuncion = ProcesarResiduos(listaPedidos, MAXPedidos, idPedidoSeleccionado, listaClientes, MAXClientes);
+      |                      ^~~~~~~~~~~~~~~~
+..\src\Parcial_Labo.c:91:5: warning: implicit declaration of function 'MostrarClientesConPedidosPendientes'; did you mean 'MostrarPedidosPendientes'? [-Wimplicit-function-declaration]
+   91 |     MostrarClientesConPedidosPendientes(listaPedidos, MAXPedidos, listaClientes, MAXClientes);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |     MostrarPedidosPendientes
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Menus.o" "..\\src\\Menus.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+..\src\ManejoStructs.c: In function 'BuscarPedidosPorLocalidad':
+..\src\ManejoStructs.c:358:6: warning: unused variable 'j' [-Wunused-variable]
+  358 |  int j;
+      |      ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Inputs.o" "..\\src\\Inputs.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+20:59:05 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Menus.o" "..\\src\\Menus.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo.o" "..\\src\\Parcial_Labo.c" 
+..\src\Parcial_Labo.c: In function 'main':
+..\src\Parcial_Labo.c:91:41: warning: passing argument 1 of 'MostrarClientesConPedidosPendientes' from incompatible pointer type [-Wincompatible-pointer-types]
+   91 |     MostrarClientesConPedidosPendientes(listaPedidos, MAXPedidos, listaClientes, MAXClientes);
+      |                                         ^~~~~~~~~~~~
+      |                                         |
+      |                                         ePedido * {aka struct <anonymous> *}
+In file included from ..\src\Parcial_Labo.c:7:
+..\src\ManejoStructs.h:33:53: note: expected 'eCliente *' {aka 'struct <anonymous> *'} but argument is of type 'ePedido *' {aka 'struct <anonymous> *'}
+   33 | void MostrarClientesConPedidosPendientes (eCliente* listaClientes, int tamClientes);
+      |                                           ~~~~~~~~~~^~~~~~~~~~~~~
+..\src\Parcial_Labo.c:91:5: error: too many arguments to function 'MostrarClientesConPedidosPendientes'
+   91 |     MostrarClientesConPedidosPendientes(listaPedidos, MAXPedidos, listaClientes, MAXClientes);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\Parcial_Labo.c:7:
+..\src\ManejoStructs.h:33:6: note: declared here
+   33 | void MostrarClientesConPedidosPendientes (eCliente* listaClientes, int tamClientes);
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+21:00:24 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Inputs.o" "..\\src\\Inputs.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo.o" "..\\src\\Parcial_Labo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+Info: Nothing to build for Parcial_Labo
+21:07:15 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Menus.o" "..\\src\\Menus.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+21:09:47 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo.o" "..\\src\\Parcial_Labo.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+21:15:46 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo.o" "..\\src\\Parcial_Labo.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+21:18:52 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo.o" "..\\src\\Parcial_Labo.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+21:19:08 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo.o" "..\\src\\Parcial_Labo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Menus.o" "..\\src\\Menus.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+21:26:36 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+21:27:44 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+21:28:19 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Parcial_Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+21:28:26 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+21:53:45 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Parcial_Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+21:53:51 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+21:54:41 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Parcial_Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+21:54:48 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+21:56:57 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+21:57:44 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Parcial_Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+21:57:52 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+21:58:23 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Parcial_Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+21:58:29 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+22:03:03 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Parcial_Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+22:03:09 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+22:06:51 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+22:09:03 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+22:11:05 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+08:04:33 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+08:07:02 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+08:11:22 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo.o" "..\\src\\Parcial_Labo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Parcial_Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+08:11:33 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+08:21:06 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo.o" "..\\src\\Parcial_Labo.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+Info: Nothing to build for Parcial_Labo
+08:27:35 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Parcial_Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+08:27:42 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+08:29:13 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+..\src\ManejoStructs.c: In function 'CrearPedidoDeRecoleccion':
+..\src\ManejoStructs.c:209:14: warning: format '%d' expects argument of type 'int', but argument 2 has type 'double' [-Wformat=]
+  209 |     printf("%d", listaPedidos[index].kilosTotales);
+      |             ~^   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |              |                      |
+      |              int                    double
+      |             %f
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+08:31:19 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+..\src\ManejoStructs.c: In function 'CrearPedidoDeRecoleccion':
+..\src\ManejoStructs.c:211:14: warning: format '%d' expects argument of type 'int', but argument 2 has type 'double' [-Wformat=]
+  211 |     printf("%d", listaPedidos[index].kilosTotales);
+      |             ~^   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |              |                      |
+      |              int                    double
+      |             %f
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+08:33:01 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+08:35:48 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo.o" "..\\src\\Parcial_Labo.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Parcial_Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+08:36:03 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+08:44:07 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo.o" "..\\src\\Parcial_Labo.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Parcial_Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+08:44:18 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+08:47:28 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+..\src\ManejoStructs.c: In function 'ProcesarResiduos':
+..\src\ManejoStructs.c:268:11: warning: format '%f' expects argument of type 'double', but argument 2 has type 'int' [-Wformat=]
+  268 |  printf("%f", max);
+      |          ~^   ~~~
+      |           |   |
+      |           |   int
+      |           double
+      |          %d
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+08:57:07 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo.o" "..\\src\\Parcial_Labo.c" 
+..\src\Parcial_Labo.c: In function 'main':
+..\src\Parcial_Labo.c:30:8: warning: variable 'prueba' set but not used [-Wunused-but-set-variable]
+   30 |  float prueba;
+      |        ^~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+08:58:09 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo.o" "..\\src\\Parcial_Labo.c" 
+..\src\Parcial_Labo.c: In function 'main':
+..\src\Parcial_Labo.c:30:6: warning: variable 'prueba' set but not used [-Wunused-but-set-variable]
+   30 |  int prueba;
+      |      ^~~~~~
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Parcial_Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+08:58:16 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+Info: Nothing to build for Parcial_Labo
+Info: Nothing to build for Parcial_Labo
+09:01:15 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo.o" "..\\src\\Parcial_Labo.c" 
+..\src\Parcial_Labo.c: In function 'main':
+..\src\Parcial_Labo.c:30:6: warning: variable 'prueba' set but not used [-Wunused-but-set-variable]
+   30 |  int prueba;
+      |      ^~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Inputs.o" "..\\src\\Inputs.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+09:03:11 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Inputs.o" "..\\src\\Inputs.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+09:03:59 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Inputs.o" "..\\src\\Inputs.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+Info: Nothing to build for Parcial_Labo
+Info: Nothing to build for Parcial_Labo
+09:11:09 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Inputs.o" "..\\src\\Inputs.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Parcial_Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+09:11:17 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Parcial_Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+09:11:35 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+09:11:53 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Inputs.o" "..\\src\\Inputs.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Parcial_Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+09:12:01 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+09:14:13 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+..\src\ManejoStructs.c: In function 'CrearPedidoDeRecoleccion':
+..\src\ManejoStructs.c:197:6: warning: unused variable 'i' [-Wunused-variable]
+  197 |  int i;
+      |      ^
+..\src\ManejoStructs.c:194:6: warning: variable 'succes' set but not used [-Wunused-but-set-variable]
+  194 |  int succes;
+      |      ^~~~~~
+..\src\ManejoStructs.c: At top level:
+..\src\ManejoStructs.c:225:2: error: expected identifier or '(' before 'return'
+  225 |  return succes;
+      |  ^~~~~~
+..\src\ManejoStructs.c:226:1: error: expected identifier or '(' before '}' token
+  226 | }
+      | ^
+..\src\ManejoStructs.c: In function 'CrearPedidoDeRecoleccion':
+..\src\ManejoStructs.c:223:2: warning: control reaches end of non-void function [-Wreturn-type]
+  223 |  }
+      |  ^
+09:14:55 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+..\src\ManejoStructs.c: In function 'CrearPedidoDeRecoleccion':
+..\src\ManejoStructs.c:197:6: warning: unused variable 'i' [-Wunused-variable]
+  197 |  int i;
+      |      ^
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+Info: Nothing to build for Parcial_Labo
+09:21:12 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+..\src\ManejoStructs.c: In function 'ProcesarResiduos':
+..\src\ManejoStructs.c:254:6: warning: unused variable 'j' [-Wunused-variable]
+  254 |  int j;
+      |      ^
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+09:24:37 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Inputs.o" "..\\src\\Inputs.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+09:25:21 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Inputs.o" "..\\src\\Inputs.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Parcial_Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+09:25:27 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+09:33:33 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo.o" "..\\src\\Parcial_Labo.c" 
+..\src\Parcial_Labo.c: In function 'main':
+..\src\Parcial_Labo.c:30:6: warning: variable 'prueba' set but not used [-Wunused-but-set-variable]
+   30 |  int prueba;
+      |      ^~~~~~
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Parcial_Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+09:33:41 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+09:35:28 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Inputs.o" "..\\src\\Inputs.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Parcial_Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+09:35:34 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+09:38:12 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo.o" "..\\src\\Parcial_Labo.c" 
+..\src\Parcial_Labo.c: In function 'main':
+..\src\Parcial_Labo.c:30:6: warning: variable 'prueba' set but not used [-Wunused-but-set-variable]
+   30 |  int prueba;
+      |      ^~~~~~
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Parcial_Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+09:38:20 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+09:38:54 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo.o" "..\\src\\Parcial_Labo.c" 
+..\src\Parcial_Labo.c: In function 'main':
+..\src\Parcial_Labo.c:30:6: warning: variable 'prueba' set but not used [-Wunused-but-set-variable]
+   30 |  int prueba;
+      |      ^~~~~~
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Parcial_Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+09:39:01 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+09:48:47 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo.o" "..\\src\\Parcial_Labo.c" 
+..\src\Parcial_Labo.c: In function 'main':
+..\src\Parcial_Labo.c:41:50: error: lvalue required as left operand of assignment
+   41 |    GetInt("Ingrese numero\n", 0, 100, "ERROR\n") = 1;
+      |                                                  ^
+..\src\Parcial_Labo.c:37:6: warning: unused variable 'prueba' [-Wunused-variable]
+   37 |  int prueba;
+      |      ^~~~~~
+09:48:56 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo.o" "..\\src\\Parcial_Labo.c" 
+..\src\Parcial_Labo.c: In function 'main':
+..\src\Parcial_Labo.c:41:50: error: lvalue required as left operand of assignment
+   41 |    GetInt("Ingrese numero\n", 0, 100, "ERROR\n") = 1;
+      |                                                  ^
+..\src\Parcial_Labo.c:37:6: warning: unused variable 'prueba' [-Wunused-variable]
+   37 |  int prueba;
+      |      ^~~~~~
+09:50:55 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo.o" "..\\src\\Parcial_Labo.c" 
+..\src\Parcial_Labo.c: In function 'main':
+..\src\Parcial_Labo.c:38:6: warning: unused variable 'i' [-Wunused-variable]
+   38 |  int i;
+      |      ^
+..\src\Parcial_Labo.c:37:6: warning: variable 'prueba' set but not used [-Wunused-but-set-variable]
+   37 |  int prueba;
+      |      ^~~~~~
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+09:51:05 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo.o" "..\\src\\Parcial_Labo.c" 
+..\src\Parcial_Labo.c: In function 'main':
+..\src\Parcial_Labo.c:37:6: warning: variable 'prueba' set but not used [-Wunused-but-set-variable]
+   37 |  int prueba;
+      |      ^~~~~~
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+09:57:33 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Inputs.o" "..\\src\\Inputs.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Parcial_Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+09:58:26 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Inputs.o" "..\\src\\Inputs.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Parcial_Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+09:59:29 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Inputs.o" "..\\src\\Inputs.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Parcial_Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+10:00:15 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Inputs.o" "..\\src\\Inputs.c" 
+..\src\Inputs.c: In function 'GetInt':
+..\src\Inputs.c:17:8: warning: implicit declaration of function 'IsDigit'; did you mean 'isdigit'? [-Wimplicit-function-declaration]
+   17 |  while(IsDigit(number) != 0 || (number<min || number>max)){
+      |        ^~~~~~~
+      |        isdigit
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Parcial_Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+10:00:44 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Inputs.o" "..\\src\\Inputs.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Parcial_Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+10:00:52 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Parcial_Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+10:01:04 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Inputs.o: in function `GetFloat':
+C:\Users\Andres\Desktop\UTN\1er Cuatri\Programacion1\Parciales Labo\Parcial1\Parcial_Labo\Debug/../src/Inputs.c:32: undefined reference to `ValidarNumero'
+collect2.exe: error: ld returned 1 exit status
+10:01:21 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Inputs.o" "..\\src\\Inputs.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+Info: Nothing to build for Parcial_Labo
+10:01:53 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Inputs.o" "..\\src\\Inputs.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+10:03:14 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Inputs.o" "..\\src\\Inputs.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Parcial_Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+10:03:21 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+10:04:10 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Inputs.o" "..\\src\\Inputs.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Parcial_Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+10:04:31 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo.o" "..\\src\\Parcial_Labo.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+10:07:03 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+10:10:08 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+Info: Nothing to build for Parcial_Labo
+10:12:21 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+10:14:36 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+10:16:02 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+..\src\ManejoStructs.c: In function 'ProcesarResiduos':
+..\src\ManejoStructs.c:254:6: warning: unused variable 'j' [-Wunused-variable]
+  254 |  int j;
+      |      ^
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+10:37:48 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+..\src\ManejoStructs.c: In function 'RestarPedidoPendienteACliente':
+..\src\ManejoStructs.c:312:6: error: 'list' undeclared (first use in this function)
+  312 |   if(list[i].idPedido == id){
+      |      ^~~~
+..\src\ManejoStructs.c:312:6: note: each undeclared identifier is reported only once for each function it appears in
+..\src\ManejoStructs.c:313:4: error: 'index' undeclared (first use in this function)
+  313 |    index = i;
+      |    ^~~~~
+10:38:02 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+Info: Nothing to build for Parcial_Labo
+10:40:37 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Inputs.o" "..\\src\\Inputs.c" 
+In file included from ..\src\Inputs.c:7:
+..\src\ManejoStructs.h: In function 'RestarPedidoPendienteACliente':
+..\src\ManejoStructs.h:37:6: error: redefinition of parameter 'MostrarPedidosPendientes'
+   37 | void MostrarPedidosPendientes(ePedido* listaPedidos, int tamPedidos, eCliente* listaClientes, int tamClientes);
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~
+..\src\ManejoStructs.h:34:6: note: previous definition of 'MostrarPedidosPendientes' was here
+   34 | void MostrarPedidosPendientes(ePedido* listaPedidos, int tamPedidos, eCliente* listaClientes, int tamClientes);
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Inputs.c:10:66: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   10 | int GetInt(char mensaje[], int min, int max, char mensajeError[]){
+      |                                                                  ^
+..\src\Inputs.c:25:70: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   25 | float GetFloat(char mensaje[], int min, int max, char mensajeError[]){
+      |                                                                      ^
+..\src\Inputs.c:41:56: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   41 | void GetString (char mensaje[], char cadena[], int tam){
+      |                                                        ^
+In file included from ..\src\Inputs.c:7:
+..\src\ManejoStructs.h:29:6: error: old-style parameter declarations in prototyped function definition
+   29 | void RestarPedidoPendienteACliente(eCliente* listaCliente, int tamClientes, int id)
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Inputs.c:49: error: expected '{' at end of input
+10:40:44 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo.o" "..\\src\\Parcial_Labo.c" 
+In file included from ..\src\Parcial_Labo.c:7:
+..\src\ManejoStructs.h: In function 'RestarPedidoPendienteACliente':
+..\src\ManejoStructs.h:37:6: error: redefinition of parameter 'MostrarPedidosPendientes'
+   37 | void MostrarPedidosPendientes(ePedido* listaPedidos, int tamPedidos, eCliente* listaClientes, int tamClientes);
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~
+..\src\ManejoStructs.h:34:6: note: previous definition of 'MostrarPedidosPendientes' was here
+   34 | void MostrarPedidosPendientes(ePedido* listaPedidos, int tamPedidos, eCliente* listaClientes, int tamClientes);
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Parcial_Labo.c:14:12: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   14 | int main() {
+      |            ^
+In file included from ..\src\Parcial_Labo.c:7:
+..\src\ManejoStructs.h:29:6: error: old-style parameter declarations in prototyped function definition
+   29 | void RestarPedidoPendienteACliente(eCliente* listaCliente, int tamClientes, int id)
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Parcial_Labo.c:128: error: expected '{' at end of input
+  128 | }
+      | 
+10:42:42 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Menus.o" "..\\src\\Menus.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Inputs.o" "..\\src\\Inputs.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo.o" "..\\src\\Parcial_Labo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+10:42:50 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo.o" "..\\src\\Parcial_Labo.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+Info: Nothing to build for Parcial_Labo
+10:45:10 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+..\src\ManejoStructs.c: In function 'ProcesarResiduos':
+..\src\ManejoStructs.c:254:6: warning: unused variable 'j' [-Wunused-variable]
+  254 |  int j;
+      |      ^
+..\src\ManejoStructs.c:252:6: warning: variable 'succes' set but not used [-Wunused-but-set-variable]
+  252 |  int succes;
+      |      ^~~~~~
+..\src\ManejoStructs.c: At top level:
+..\src\ManejoStructs.c:299:2: error: expected identifier or '(' before 'return'
+  299 |  return succes;
+      |  ^~~~~~
+..\src\ManejoStructs.c:300:1: error: expected identifier or '(' before '}' token
+  300 | }
+      | ^
+..\src\ManejoStructs.c: In function 'ProcesarResiduos':
+..\src\ManejoStructs.c:295:2: warning: control reaches end of non-void function [-Wreturn-type]
+  295 |  }
+      |  ^
+10:45:25 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+..\src\ManejoStructs.c: In function 'ProcesarResiduos':
+..\src\ManejoStructs.c:254:6: warning: unused variable 'j' [-Wunused-variable]
+  254 |  int j;
+      |      ^
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Parcial_Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+10:45:31 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+Info: Nothing to build for Parcial_Labo
+10:47:25 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo.o" "..\\src\\Parcial_Labo.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Parcial_Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+10:47:31 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+10:50:17 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+..\src\ManejoStructs.c: In function 'ProcesarResiduos':
+..\src\ManejoStructs.c:254:6: warning: unused variable 'j' [-Wunused-variable]
+  254 |  int j;
+      |      ^
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+11:09:49 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+11:11:31 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+..\src\ManejoStructs.c: In function 'CrearPedidoDeRecoleccion':
+..\src\ManejoStructs.c:212:52: warning: passing argument 1 of 'AsignarIdPedido' from incompatible pointer type [-Wincompatible-pointer-types]
+  212 |     listaPedidos[index].idPedido = AsignarIdPedido(&idPedido);
+      |                                                    ^~~~~~~~~
+      |                                                    |
+      |                                                    int **
+In file included from ..\src\ManejoStructs.c:7:
+..\src\ManejoStructs.h:26:26: note: expected 'int *' but argument is of type 'int **'
+   26 | int AsignarIdPedido(int* idPedido);
+      |                     ~~~~~^~~~~~~~
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Parcial_Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+11:11:44 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+Info: Nothing to build for Parcial_Labo
+11:13:13 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+..\src\ManejoStructs.c: In function 'CrearPedidoDeRecoleccion':
+..\src\ManejoStructs.c:212:52: error: invalid type argument of unary '*' (have 'int')
+  212 |     listaPedidos[index].idPedido = AsignarIdPedido(**idPedido);
+      |                                                    ^~~~~~~~~~
+11:13:31 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+..\src\ManejoStructs.c: In function 'CrearPedidoDeRecoleccion':
+..\src\ManejoStructs.c:212:52: warning: passing argument 1 of 'AsignarIdPedido' from incompatible pointer type [-Wincompatible-pointer-types]
+  212 |     listaPedidos[index].idPedido = AsignarIdPedido(&idPedido);
+      |                                                    ^~~~~~~~~
+      |                                                    |
+      |                                                    int **
+In file included from ..\src\ManejoStructs.c:7:
+..\src\ManejoStructs.h:26:26: note: expected 'int *' but argument is of type 'int **'
+   26 | int AsignarIdPedido(int* idPedido);
+      |                     ~~~~~^~~~~~~~
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Parcial_Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+11:13:48 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Parcial_Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+11:14:28 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Parcial_Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
