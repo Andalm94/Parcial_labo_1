@@ -1723,3 +1723,78 @@ Info: Internal Builder is used for build
 gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
 c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Parcial_Labo.exe: Permission denied
 collect2.exe: error: ld returned 1 exit status
+19:03:44 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\ManejoStructs.o" "src\\Menus.o" "src\\Parcial_Labo.o" 
+19:29:19 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ManejoStructs.o" "..\\src\\ManejoStructs.c" 
+In file included from ..\src\ManejoStructs.c:6:
+..\src\Inputs.h:9:2: error: unknown type name 'eLocalidad'
+    9 |  eLocalidad listaLocalidad[50];
+      |  ^~~~~~~~~~
+..\src\ManejoStructs.c: In function 'MostrarUnCliente':
+..\src\ManejoStructs.c:32:113: error: request for member 'direccion' in something not a structure or union
+   32 |    printf("%4d %20s %16d %20s %20s \n", list[i].idCliente, list[i].empresa, list[i].cuit, list[i].listaLocalidad.direccion, list[i].listaLocalidad.localidad);
+      |                                                                                                                 ^
+..\src\ManejoStructs.c:32:147: error: request for member 'localidad' in something not a structure or union
+   32 |    printf("%4d %20s %16d %20s %20s \n", list[i].idCliente, list[i].empresa, list[i].cuit, list[i].listaLocalidad.direccion, list[i].listaLocalidad.localidad);
+      |                                                                                                                                                   ^
+..\src\ManejoStructs.c: In function 'MostrarClientes':
+..\src\ManejoStructs.c:56:113: error: request for member 'direccion' in something not a structure or union
+   56 |    printf("%4d %20s %16d %20s %20s \n", list[i].idCliente, list[i].empresa, list[i].cuit, list[i].listaLocalidad.direccion, list[i].listaLocalidad.localidad);
+      |                                                                                                                 ^
+..\src\ManejoStructs.c:56:147: error: request for member 'localidad' in something not a structure or union
+   56 |    printf("%4d %20s %16d %20s %20s \n", list[i].idCliente, list[i].empresa, list[i].cuit, list[i].listaLocalidad.direccion, list[i].listaLocalidad.localidad);
+      |                                                                                                                                                   ^
+..\src\ManejoStructs.c: In function 'CargarNuevoCliente':
+..\src\ManejoStructs.c:105:36: error: request for member 'direccion' in something not a structure or union
+  105 |   strcpy(list[index].listaLocalidad.direccion, direccion);
+      |                                    ^
+..\src\ManejoStructs.c:106:36: error: request for member 'localidad' in something not a structure or union
+  106 |   strcpy(list[index].listaLocalidad.localidad, localidad);
+      |                                    ^
+..\src\ManejoStructs.c: In function 'ModificarDireccion':
+..\src\ManejoStructs.c:150:33: error: request for member 'direccion' in something not a structure or union
+  150 |    strcpy(list[i].listaLocalidad.direccion, nuevaDireccion);
+      |                                 ^
+..\src\ManejoStructs.c: In function 'ModificarLocalidad':
+..\src\ManejoStructs.c:167:33: error: request for member 'localidad' in something not a structure or union
+  167 |    strcpy(list[i].listaLocalidad.localidad, nuevaLocalidad);
+      |                                 ^
+..\src\ManejoStructs.c: In function 'CrearPedidoDeRecoleccion':
+..\src\ManejoStructs.c:212:52: warning: passing argument 1 of 'AsignarIdPedido' from incompatible pointer type [-Wincompatible-pointer-types]
+  212 |     listaPedidos[index].idPedido = AsignarIdPedido(&idPedido);
+      |                                                    ^~~~~~~~~
+      |                                                    |
+      |                                                    int **
+In file included from ..\src\ManejoStructs.c:7:
+..\src\ManejoStructs.h:26:26: note: expected 'int *' but argument is of type 'int **'
+   26 | int AsignarIdPedido(int* idPedido);
+      |                     ~~~~~^~~~~~~~
+..\src\ManejoStructs.c: In function 'MostrarClientesConPedidosPendientes':
+..\src\ManejoStructs.c:337:152: error: request for member 'direccion' in something not a structure or union
+  337 |    printf("%4d %20s %8d %20s %20s %4d \n", listaClientes[i].idCliente, listaClientes[i].empresa, listaClientes[i].cuit, listaClientes[i].listaLocalidad.direccion, listaClientes[i].listaLocalidad.localidad, listaClientes[i].pedidosPendientes);
+      |                                                                                                                                                        ^
+..\src\ManejoStructs.c:337:195: error: request for member 'localidad' in something not a structure or union
+  337 |    printf("%4d %20s %8d %20s %20s %4d \n", listaClientes[i].idCliente, listaClientes[i].empresa, listaClientes[i].cuit, listaClientes[i].listaLocalidad.direccion, listaClientes[i].listaLocalidad.localidad, listaClientes[i].pedidosPendientes);
+      |                                                                                                                                                                                                   ^
+..\src\ManejoStructs.c: In function 'MostrarPedidosPendientes':
+..\src\ManejoStructs.c:352:87: error: request for member 'direccion' in something not a structure or union
+  352 |      printf("%d\t %s\t %.2f\n", listaClientes[j].cuit, listaClientes[j].listaLocalidad.direccion, listaPedidos[i].kilosTotales);
+      |                                                                                       ^
+..\src\ManejoStructs.c: In function 'MostrarPedidosProcesados':
+..\src\ManejoStructs.c:369:101: error: request for member 'direccion' in something not a structure or union
+  369 |      printf("%d\t %s\t %.2f\t %.2f\t %.2f\n", listaClientes[j].cuit, listaClientes[j].listaLocalidad.direccion, listaPedidos[i].kilosHDPE, listaPedidos[i].kilosLDPE, listaPedidos[i].kilosPP);
+      |                                                                                                     ^
+..\src\ManejoStructs.c: In function 'BuscarPedidosPorLocalidad':
+..\src\ManejoStructs.c:389:37: error: request for member 'localidad' in something not a structure or union
+  389 |   if(listaClientes[i].listaLocalidad.localidad == localidadIngresada && listaClientes[i].pedidosPendientes > 0){
+      |                                     ^
+19:30:10 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Inputs.o" "..\\src\\Inputs.c" 
+In file included from ..\src\Inputs.c:6:
+..\src\Inputs.h:9:2: error: unknown type name 'eLocalidad'
+    9 |  eLocalidad listaLocalidad[50];
+      |  ^~~~~~~~~~

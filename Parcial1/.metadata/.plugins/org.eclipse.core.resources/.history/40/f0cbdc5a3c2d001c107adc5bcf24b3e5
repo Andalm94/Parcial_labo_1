@@ -29,7 +29,7 @@ void MostrarUnCliente(eCliente* list, int tam, int id){
 	for (i=0; i<tam; i++){
 		if(list[i].idCliente == id && list[i].isEmpty == FULL){
 			printf("ID\t||\tEMPRESA \t||\tCUIT \t||\tDIRECCION \t||\tLOCALIDAD \t\n");
-			printf("%4d %20s %16d %20s %20s \n", list[i].idCliente, list[i].empresa, list[i].cuit, list[i].listaLocalidad.direccion, list[i].listaLocalidad.localidad);
+			printf("%4d %20s %16d %20s %20s \n", list[i].idCliente, list[i].empresa, list[i].cuit, list[i].listaLocalidad.direccion, list[i].localidad);
 		}
 
 	}
@@ -53,7 +53,7 @@ int MostrarClientes(eCliente* list, int tam){
 	printf("ID\t||\tEMPRESA \t||\tCUIT \t||\tDIRECCION \t||\tLOCALIDAD \t\n");
 	for(i=0; i<tam; i++){
 		if(list[i].isEmpty == 1){
-			printf("%4d %20s %16d %20s %20s \n", list[i].idCliente, list[i].empresa, list[i].cuit, list[i].listaLocalidad.direccion, list[i].listaLocalidad.localidad);
+			printf("%4d %20s %16d %20s %20s \n", list[i].idCliente, list[i].empresa, list[i].cuit, list[i].listaLocalidad.direccion, list[i].localidad);
 			printf("\n");
 
 			succes = 1;
@@ -102,8 +102,8 @@ int CargarNuevoCliente(eCliente* list, int tam, int* id){
 		list[index].idCliente = AsignarIdCliente(id);
 		strcpy(list[index].empresa, empresa);
 		list[index].cuit = cuit;
-		strcpy(list[index].listaLocalidad.direccion, direccion);
-		strcpy(list[index].listaLocalidad.localidad, localidad);
+		strcpy(list[i].listaLocalidad.direccion, direccion);
+		strcpy(list[index].localidad, localidad);
 		list[index].pedidosPendientes = 0;
 		list[index].isEmpty = FULL;
 		succes = 0;
@@ -164,7 +164,7 @@ int ModificarLocalidad(eCliente* list, int tam, int id, char mensaje[]){
 	for (i=0; i<tam; i++){
 		if(list[i].idCliente == id && list[i].isEmpty == FULL){
 			GetString(mensaje, nuevaLocalidad, 50);
-			strcpy(list[i].listaLocalidad.localidad, nuevaLocalidad);
+			strcpy(list[i].localidad, nuevaLocalidad);
 			succes = 0;
 		}
 
@@ -334,7 +334,7 @@ void MostrarClientesConPedidosPendientes (eCliente* listaClientes, int tamClient
 	printf("ID\t||EMPRESA\t||CUIT\t||DIRECCION\t||LOCALIDAD\t||PEDIDOS PENDIENTES\t\n");
 	for(i=0; i<tamClientes; i++){
 		if(listaClientes[i].isEmpty == FULL && listaClientes[i].pedidosPendientes > 0){
-			printf("%4d %20s %8d %20s %20s %4d \n", listaClientes[i].idCliente, listaClientes[i].empresa, listaClientes[i].cuit, listaClientes[i].listaLocalidad.direccion, listaClientes[i].listaLocalidad.localidad, listaClientes[i].pedidosPendientes);
+			printf("%4d %20s %8d %20s %20s %4d \n", listaClientes[i].idCliente, listaClientes[i].empresa, listaClientes[i].cuit, listaClientes[i].direccion, listaClientes[i].localidad, listaClientes[i].pedidosPendientes);
 		}
 	}
 }
@@ -349,7 +349,7 @@ void MostrarPedidosPendientes(ePedido* listaPedidos, int tamPedidos, eCliente* l
 		if(listaPedidos[i].isEmpty == FULL && listaPedidos[i].estado == PENDIENTE){
 			for(j=0 ; j < tamClientes; j++){
 				if (listaPedidos[i].idCliente == listaClientes[j].idCliente){
-					printf("%d\t %s\t %.2f\n", listaClientes[j].cuit, listaClientes[j].listaLocalidad.direccion, listaPedidos[i].kilosTotales);
+					printf("%d\t %s\t %.2f\n", listaClientes[j].cuit, listaClientes[j].direccion, listaPedidos[i].kilosTotales);
 				}
 			}
 		}
@@ -366,7 +366,7 @@ void MostrarPedidosProcesados(ePedido* listaPedidos, int tamPedidos, eCliente* l
 		if(listaPedidos[i].isEmpty == FULL && listaPedidos[i].estado == COMPLETADO){
 			for(j=0 ; j < tamClientes; j++){
 				if (listaPedidos[i].idCliente == listaClientes[j].idCliente){
-					printf("%d\t %s\t %.2f\t %.2f\t %.2f\n", listaClientes[j].cuit, listaClientes[j].listaLocalidad.direccion, listaPedidos[i].kilosHDPE, listaPedidos[i].kilosLDPE, listaPedidos[i].kilosPP);
+					printf("%d\t %s\t %.2f\t %.2f\t %.2f\n", listaClientes[j].cuit, listaClientes[j].direccion, listaPedidos[i].kilosHDPE, listaPedidos[i].kilosLDPE, listaPedidos[i].kilosPP);
 				}
 			}
 		}
@@ -386,7 +386,7 @@ int BuscarPedidosPorLocalidad(char mensaje[], eCliente* listaClientes, int tamCl
 	GetString(mensaje, localidadIngresada, 20);
 
 	for(i=0; i<tamClientes; i++){
-		if(listaClientes[i].listaLocalidad.localidad == localidadIngresada && listaClientes[i].pedidosPendientes > 0){
+		if(listaClientes[i].localidad == localidadIngresada && listaClientes[i].pedidosPendientes > 0){
 			pedidosPendientesEnLaLocalidad += listaClientes[i].pedidosPendientes;
 		}
 	}

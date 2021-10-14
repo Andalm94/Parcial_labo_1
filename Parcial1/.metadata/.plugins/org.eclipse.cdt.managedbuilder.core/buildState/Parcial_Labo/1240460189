@@ -1,3 +1,12 @@
 #
-#Thu Oct 14 11:14:29 ART 2021
+#Thu Oct 14 19:30:10 ART 2021
+src/Informes.c=1
+Debug/src/Inputs.o=1
+Debug/src/ManejoStructs.o=1
+src/ManejoStructs.c=1
+Debug/src/Menus.o=1
+src/Inputs.h=1
+Debug/src/Parcial_Labo.o=1
 Debug/Parcial_Labo.exe=1
+src/Parcial_Labo.c=1
+Debug/src/Informes.o=1

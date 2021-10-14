@@ -5,6 +5,7 @@ typedef struct{
 	int idCliente; //PK
 	char empresa[50];
 	int cuit;
+	char localidad[20];
 	int pedidosPendientes;
 	eLocalidad listaLocalidad[50];
 	int isEmpty;
@@ -23,6 +24,7 @@ typedef struct{
 }ePedido;
 
 typedef struct{
+	int idLocalidad;
 	char localidad[50];
 	char direccion[50];
 }eLocalidad;

@@ -5,15 +5,15 @@ typedef struct{
 	int idCliente; //PK
 	char empresa[50];
 	int cuit;
+	char direccion[50];
+	char localidad[20];
 	int pedidosPendientes;
-	eLocalidad listaLocalidad[50];
 	int isEmpty;
 }eCliente;
 
 typedef struct{
 	int idPedido; //PK
 	int idCliente; //FK
-	int idLocalidad;
 	float kilosTotales;
 	float kilosHDPE;
 	float kilosLDPE;
@@ -21,11 +21,6 @@ typedef struct{
 	int estado;
 	int isEmpty;
 }ePedido;
-
-typedef struct{
-	char localidad[50];
-	char direccion[50];
-}eLocalidad;
 
 int GetInt(char mensaje[], int min, int max, char mensajeError[]);
 float GetFloat(char mensaje[], int min, int max, char mensajeError[]);
