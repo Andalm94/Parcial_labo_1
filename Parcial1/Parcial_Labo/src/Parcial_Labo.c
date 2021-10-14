@@ -16,7 +16,7 @@ int main(){
 	int opcionMenuPrincipal;
 	eCliente listaClientes[MAXClientes];
 	ePedido listaPedidos[MAXPedidos];
-	eLocalidad listaLocalidades[10];
+
 
 
 	int retornoFuncion;

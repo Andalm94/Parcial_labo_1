@@ -103,7 +103,7 @@ int CargarNuevoCliente(eCliente* list, int tam, int* id){
 		strcpy(list[index].empresa, empresa);
 		list[index].cuit = cuit;
 		strcpy(list[index].listaLocalidad.direccion, direccion);
-		strcpy(list[index].listaLocalidad.localidad, localidad);
+		strcpy(list[index].listaLocalidad->localidad, localidad);
 		list[index].pedidosPendientes = 0;
 		list[index].isEmpty = FULL;
 		succes = 0;
