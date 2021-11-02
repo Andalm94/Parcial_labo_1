@@ -1,0 +1,68 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
+#include "eCliente.h"
+#include "Inputs.h"
+#include "eLocalidad.h"
+#include "ePedido.h"
+#include "Relaciones.h"
+
+#define EMPTY 0
+#define FULL 1
+
+int CalcularPedidosPendientesPorCliente (eCliente cliente, ePedido* listaPedidos, int tamPedidos){
+	int pedidosDelCliente;
+	int i;
+	pedidosDelCliente = 0;
+
+	for (i=0; i<tamPedidos; i++){
+		if (listaPedidos[i].isEmpty == FULL && strcmp(listaPedidos[i].estado,"PENDIENTE")==0 && listaPedidos[i].idClientes == cliente.idCliente){
+			pedidosDelCliente++;
+		}
+	}
+
+
+	return pedidosDelCliente;
+}
+int ImprimirClientesConPedidosPendientes (eCliente* listaClientes, int tamClientes, ePedido* listaPedidos, int tamPedidos){
+	int i;
+	int succes;
+	int pedidosPendientes;
+	succes = -1;
+
+	for (i=0; i<tamClientes; i++){
+		if (listaClientes[i].isEmpty == FULL){
+			 pedidosPendientes = CalcularPedidosPendientesPorCliente(listaClientes[i], listaPedidos, tamPedidos);
+			 if (pedidosPendientes != 0){
+				 printf("ID\t||\tEMPRESA \t||\tCUIT \t||\tDIRECCION \t||\tLOCALIDAD \t\n||\tPEDIDOS PENDIENTES \t\n");
+				 printf("%4d %20s %16d %20s %20d %16d \n", listaClientes[i].idCliente, listaClientes[i].empresa, listaClientes[i].cuit, listaClientes[i].direccion, listaClientes[i].idLocalidad, pedidosPendientes);
+				 succes = 0;
+			 }
+		}
+	}
+
+
+
+	return succes;
+}
+
+int ImprimirPedidosPendientes (eCliente* listaClientes, int tamClientes, ePedido* listaPedidos, int tamPedidos){
+	int succes;
+	int i;
+	int indexCliente;
+	succes = -1;
+
+	printf("--------PEDIDOS PENDIENTES--------");
+	printf("ID-PEDIDO \t||\tCUIT DEL CLIENTE \t||\tDIRECCION \t||\tKILOS A RECOLECTAR\n");
+	for (i=0; i<tamPedidos; i++){
+		if(listaPedidos[i].isEmpty == FULL && strcmp(listaPedidos[i].estado, "PENDIENTE") == 0){
+			indexCliente = BuscarClientePorId(listaClientes, tamClientes, listaPedidos[i].idClientes);
+			printf("%10d, %10d, %20s, %10f", listaPedidos[i].idPedido, listaClientes[indexCliente].cuit, listaClientes[indexCliente].direccion, listaPedidos[i].cantidadKilosTotales);
+			succes = 0;
+		}
+	}
+
+	return succes;
+}
+

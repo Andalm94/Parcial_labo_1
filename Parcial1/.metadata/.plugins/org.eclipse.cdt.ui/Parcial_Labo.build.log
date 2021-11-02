@@ -1,10 +1,7 @@
-20:14:37 **** Incremental Build of configuration Debug for project Parcial_Labo ****
+19:39:58 **** Incremental Build of configuration Debug for project Parcial_Labo ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-In file included from ..\src\Informes.c:6:
-..\src\Inputs.h:9:2: error: unknown type name 'eLocalidad'
-    9 |  eLocalidad listaLocalidad;
-      |  ^~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_Labo.o" "..\\src\\Parcial_Labo.c" 
+gcc -o Parcial_Labo.exe "src\\Inputs.o" "src\\Parcial_Labo.o" "src\\Relaciones.o" "src\\eCliente.o" "src\\eLocalidad.o" "src\\ePedido.o" 
 
-20:14:37 Build Failed. 1 errors, 0 warnings. (took 88ms)
+19:39:58 Build Finished. 0 errors, 0 warnings. (took 272ms)
 

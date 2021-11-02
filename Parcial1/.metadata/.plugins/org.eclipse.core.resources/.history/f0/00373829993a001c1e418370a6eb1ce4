@@ -1,0 +1,10 @@
+#ifndef RELACIONES_H_
+#define RELACIONES_H_
+
+
+int CalcularPedidosPendientesPorCliente (eCliente cliente, ePedido* listaPedidos, int tamPedidos);
+int ImprimirClientesConPedidosPendientes (eCliente* listaClientes, int tamClientes, ePedido* listaPedidos, int tamPedidos);
+
+int ImprimirPedidosPendientes (eCliente* listaClientes, int tamClientes, ePedido* listaPedidos, int tamPedidos);
+int ImprimirPedidosProcesados (eCliente* listaClientes, int tamClientes, ePedido* listaPedidos, int tamPedidos);
+#endif

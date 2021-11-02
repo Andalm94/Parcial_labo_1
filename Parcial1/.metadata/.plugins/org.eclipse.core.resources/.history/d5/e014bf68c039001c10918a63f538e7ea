@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
+#include "eCliente.h"
+#include "Inputs.h"
+#include "eLocalidad.h"
+#include "ePedido.h"
+
+#define EMPTY 0
+#define FULL 1
+
+/*---INICIALIZACION Y BUSQUEDA----*/
+
+void InicializarPedidos(ePedido* list, int tam){
+	int i;
+
+	for (i=0; i<tam; i++){
+		list[i].isEmpty = EMPTY;
+		list[i].cantidadKilosTotales = 0;
+		list[i].HPPE = 0;
+		list[i].LDPE = 0;
+		list[i].PP = 0;
+	}
+}
+
+
+
+/*--------------ABM--------------*/

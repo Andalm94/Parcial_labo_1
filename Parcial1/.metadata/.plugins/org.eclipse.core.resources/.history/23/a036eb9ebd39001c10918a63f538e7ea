@@ -1,0 +1,17 @@
+#ifndef EPEDIDO_H_
+#define EPEDIDO_H_
+
+typedef struct {
+	int idPedido;
+	float cantidadKilosTotales;
+	float HPPE;
+	float LDPE;
+	float PP;
+	char estado[10];
+	int isEmpty;
+	int idClientes;
+}ePedido;
+
+
+
+#endif

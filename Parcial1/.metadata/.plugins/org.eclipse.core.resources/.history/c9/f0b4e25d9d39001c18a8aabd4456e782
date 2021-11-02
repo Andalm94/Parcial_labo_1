@@ -1,0 +1,15 @@
+#ifndef ECLIENTES_H_
+#define ECLIENTES_H_
+
+typedef struct {
+	int idClientes;
+	char nombreEmpresa[100];
+	char cuit[100];
+	char direccion[100];
+	int idLocalidad;
+	int isEmpty;
+}eCliente;
+
+
+
+#endif

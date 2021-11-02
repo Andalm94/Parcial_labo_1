@@ -1,0 +1,64 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
+
+#define MAXClientes 100
+#define MAXPedidos 100
+
+
+int main(){
+	setbuf(stdout, NULL);
+
+	int opcionMenu;
+	int retornoFuncion;
+
+	eCliente listaClientes[MAXClientes];
+	int *id = 1000;
+
+
+	do{
+		printf("-----------------MENU PRINCIPAL-----------------\n");
+		printf("1) Alta de cliente\n");
+		printf("2) Modificacion de cliente\n");
+		printf("3) Baja de cliente\n");
+		printf("4) Crear pedido de recoleccion\n");
+		printf("5) Procesar residuos\n");
+		printf("6) Imprimir clientes\n");
+		printf("7) Imprimir pedidos pendientes\n");
+		printf("8) Imprimir pedidos procesados\n");
+		printf("9) Informar pedidos pendientes por localidad\n");
+		printf("10) Informar promedio de kilos de polipropileno reciclado por cliente\n");
+		printf("11) Informar cliente con mas pedidos pendientes\n");
+		printf("12) Informar cliente con mas pedidos completados\n");
+		printf("13) Informar cliente con mas pedidos\n");
+		printf("14) Salir\n");
+
+		switch(opcionMenu){
+			case 1:
+				retornoFuncion = AltaNuevoCliente(listaClientes, MAXClientes, &id);
+				break;
+			case 2:
+			case 3:
+			case 4:
+			case 5:
+			case 6:
+			case 7:
+			case 8:
+			case 9:
+			case 10:
+			case 11:
+			case 12:
+			case 13:
+			case 14:
+				break;
+
+		}
+
+
+		opcionMenu = GetInt("", 1, 14, "Opcion incorecta. Intente nuevamente.");
+	}while (opcionMenu != 14);
+
+
+	return 0;
+}

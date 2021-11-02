@@ -4,8 +4,6 @@
 #include <ctype.h>
 
 #include "Inputs.h"
-#include "ManejoStructs.h"
-
 
 int GetInt(char mensaje[], int min, int max, char mensajeError[]){
 	int number;
@@ -37,12 +35,10 @@ float GetFloat(char mensaje[], int min, int max, char mensajeError[]){
 
 	return number;
 }
-
 void GetString (char mensaje[], char cadena[], int tam){
 	printf("%s", mensaje);
 	fflush(stdin);
 	if (fgets(cadena, tam, stdin)){
 		cadena[strcspn(cadena, "\n")] = 0;
 	}
-
 }

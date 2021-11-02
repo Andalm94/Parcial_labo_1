@@ -2,130 +2,143 @@
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
-
+#include "eCliente.h"
 #include "Inputs.h"
-#include "ManejoStructs.h"
-#include "Menus.h"
+#include "eLocalidad.h"
+#include "ePedido.h"
+#include "Relaciones.h"
 
 #define MAXClientes 100
-#define MAXPedidos 100
+#define MAXPedidos 1000
 
 
 int main(){
 	setbuf(stdout, NULL);
-	int opcionMenuPrincipal;
+
+	int opcionMenu;
+	int auxiliar;
+
 	eCliente listaClientes[MAXClientes];
 	ePedido listaPedidos[MAXPedidos];
-
-
-
-	int retornoFuncion;
-	int idCliente;
-	int idClienteSeleccionado;
-	int idPedido;
-	int idPedidoSeleccionado;
-
-	int pedidosPorLocalidad;
-
-	float promedioKilosPP;
-
-
-
-	idCliente = 1000;
-	idPedido = 100;
-	pedidosPorLocalidad = 0;
-	promedioKilosPP = 0;
-
-	/*int prueba;
-	while(1){
-		prueba = GetInt("Ingrese numero\n", 0, 100, "ERROR\n");
-
-	}*/
-
+	int idCliente = 1000;
+	int idPedido = 100;
 
 	InicializarClientes(listaClientes, MAXClientes);
 	InicializarPedidos(listaPedidos, MAXPedidos);
 
-	do{
-		opcionMenuPrincipal = MostrarMenuPrincipal("", 1, 11, "La opcion ingresada no existe, intente nuevamente.\n");
-		switch (opcionMenuPrincipal){
-			case 1: //Alta Cliente
-				retornoFuncion = BuscarEspacioLibre(listaClientes, MAXClientes);
-				if(retornoFuncion != -1){
-					CargarNuevoCliente(listaClientes, MAXClientes, &idCliente);
+do{
+		printf("-----------------MENU PRINCIPAL-----------------\n");
+		printf("1) Alta de cliente\n");
+		printf("2) Modificacion de cliente\n");
+		printf("3) Baja de cliente\n");
+		printf("4) Crear pedido de recoleccion\n");
+		printf("5) Procesar residuos\n");
+		printf("6) Imprimir clientes\n");
+		printf("7) Imprimir pedidos pendientes\n");
+		printf("8) Imprimir pedidos procesados\n");
+		printf("9) Informar pedidos pendientes por localidad\n");
+		printf("10) Informar promedio de kilos de polipropileno reciclado por cliente\n");
+		printf("11) Informar cliente con mas pedidos pendientes\n");
+		printf("12) Informar cliente con mas pedidos completados\n");
+		printf("13) Informar cliente con mas pedidos\n");
+		printf("14) Salir\n");
+		opcionMenu = GetInt("", 1, 14, "Opcion incorecta. Intente nuevamente.");
+
+		switch(opcionMenu){
+			case 1:
+				if (AltaNuevoCliente(listaClientes, MAXClientes, &idCliente) == 0){
 					MostrarUnCliente(listaClientes, MAXClientes, idCliente-1);
 				}
+				else{
+					printf("No se ha podido cargar el cliente. Intente nuevamente.\n");
+				}
 				break;
-			case 2: //Modificar Cliente
-				retornoFuncion = MostrarClientes(listaClientes, MAXClientes);
-				idClienteSeleccionado = GetInt("Por favor, ingrese el ID del cliente: \n", 0, 1000000, "El ID ingresado no existe.");
-				if (BuscarClientePorId(listaClientes, MAXClientes, idClienteSeleccionado) != -1){
-					retornoFuncion = ModificarDireccion(listaClientes, MAXClientes, idClienteSeleccionado, "Por favor, ingrese la nueva direccion: \n");
-					retornoFuncion = ModificarLocalidad(listaClientes, MAXClientes, idClienteSeleccionado, "Por favor, ingrese la nueva localidad: \n");
+			case 2:
+				if (ModificarCliente(listaClientes, MAXClientes) == 0){
+					printf("Se han realizado los cambios exitosamente\n");
 				}
 				else{
-					printf("No se ha encontrado el usuario solicitado. Intente nuevamente: \n");
+					printf("No se ha cargado ningun cliente.\n");
 				}
 				break;
-			case 3: //Baja Cliente
-				retornoFuncion = MostrarClientes(listaClientes, MAXClientes);
-				idClienteSeleccionado = GetInt("Por favor, ingrese el ID del cliente: \n", 0, 1000000, "El ID ingresado no existe.");
-				if (BuscarClientePorId(listaClientes, MAXClientes, idClienteSeleccionado) != -1){
-					retornoFuncion = EliminarCliente(listaClientes, MAXClientes, idClienteSeleccionado);
-					if(retornoFuncion != -1){
-						printf("El cliente ha sido dado de baja exitosamente. \n");
-					}
-					else{
-						printf("El cliente no ha sido encontrado, intente nuevamente. \n");
-					}
-				}
-				break;
-			case 4: // Alta Pedido de Recoleccion
-				retornoFuncion = CrearPedidoDeRecoleccion(listaClientes, MAXClientes, listaPedidos, MAXPedidos, &idPedido);
-				if(retornoFuncion == 0){
-					printf("El pedido se ha cargado exitosamente\n");
+			case 3:
+				if (BajaCliente(listaClientes, MAXClientes) == 0){
+					printf("El cliente ha sido dado de baja exitosamente\n");
 				}
 				else{
-					printf("No se ha podido cargar el pedido. Intente nuevamente.\n");
+					printf("ERROR. Intente nuevamente\n");
 				}
 				break;
-			case 5: // Procesamiento de residuos
-				MostrarPedidos(listaPedidos, MAXPedidos, listaClientes, MAXClientes);
-				idPedidoSeleccionado = GetInt("Por favor, ingrese el ID del pedido: \n", 0, 1000000, "El ID ingresado no existe.");
-				retornoFuncion = ProcesarResiduos(listaPedidos, MAXPedidos, idPedidoSeleccionado, listaClientes, MAXClientes);
-				if(retornoFuncion == 0){
-					RestarPedidoPendienteACliente(listaClientes, MAXClientes, idPedidoSeleccionado);
-					printf("El pedido ha sido completado exitosamente.\n");
+			case 4:
+				if(AltaNuevoPedido(listaPedidos, MAXPedidos, &idPedido, listaClientes, MAXClientes) == 0){
+					MostrarUnPedido(listaPedidos, MAXPedidos, idPedido-1);
+					printf("El pedido ha sido cargado exitosamente\n");
 				}
 				else{
-					printf("El pedido no ha sido completado. Revise que las cantidades de plástico ingresadas no superen los kilogramos totales del pedido.\n");
+					printf("No ha sido posible cargar el pedido. Intente nuvemente.\n");
+				}
+				break;
+			case 5:
+				if (ProcesarResiduos(listaPedidos, MAXPedidos) == 0){
+					printf("El pedido ha sido procesado exitosamente.\n");
+				}
+				else{
+					printf("Ha habido un error, intente nuevamente.\n");
 				}
 				break;
 			case 6:
-				MostrarClientesConPedidosPendientes(listaClientes, MAXClientes);
+				if (ImprimirClientesConPedidosPendientes(listaClientes, MAXClientes, listaPedidos, MAXPedidos, -1) == -1){
+					printf("No hay ningun cliente con pedidos pendientes.\n");
+				}
 				break;
 			case 7:
-				MostrarPedidosPendientes(listaPedidos, MAXPedidos, listaClientes, MAXClientes);
+				if (ImprimirPedidosPendientes (listaClientes, MAXClientes, listaPedidos, MAXPedidos) == -1){
+					printf("No hay ningun pedidos pendientes.\n");
+				}
 				break;
 			case 8:
-				MostrarPedidosProcesados(listaPedidos, MAXPedidos, listaClientes, MAXClientes);
+				if (ImprimirPedidosProcesados (listaClientes, MAXClientes, listaPedidos, MAXPedidos) == -1){
+					printf("No se ha procesado ningun pedido.\n");
+				}
 				break;
 			case 9:
-				pedidosPorLocalidad = BuscarPedidosPorLocalidad("Por favor, ingrese la localidad:\n", listaClientes, MAXClientes);
-				if(pedidosPorLocalidad > 0){
-					printf("La localidad ingresada tiene %d pedidos pendientes.", pedidosPorLocalidad);
+				if (ImprimirPedidosPendientesPorLocalidad (listaClientes, MAXClientes, listaPedidos, MAXPedidos) == -1){
+					printf("No hay pedidos en la localidad seleccionada");
 				}
 				break;
 			case 10:
-				promedioKilosPP = CalcularKilosPPPorCliente(listaClientes, MAXClientes, listaPedidos, MAXPedidos);
-				printf("El promedio de kilos de poliproppileno reciclado por cliente es %.2f kilogramos\n", promedioKilosPP);
+				printf("El promedio de kilos PP reciclado por cliente es de %.2f\n", CalcularPromedioKilosPPPorCliente(listaClientes, MAXClientes, listaPedidos, MAXPedidos));
 				break;
 			case 11:
+				auxiliar = BuscarIdClienteConMasPedidos(listaClientes, MAXClientes, listaPedidos, MAXPedidos, -1);
+				if (auxiliar != -1){
+					printf("El cliente con mas pedidos pendientes es: \n");
+					MostrarUnCliente(listaClientes, MAXClientes, auxiliar);
+				}
 				break;
+			case 12:
+				auxiliar = BuscarIdClienteConMasPedidos(listaClientes, MAXClientes, listaPedidos, MAXPedidos, 1);
+				if (auxiliar != -1){
+					printf("El cliente con mas pedidos completados es: \n");
+					MostrarUnCliente(listaClientes, MAXClientes, auxiliar);
+				}
+				break;
+			case 13:
+				auxiliar = BuscarIdClienteConMasPedidos(listaClientes, MAXClientes, listaPedidos, MAXPedidos, 0);
+				if (auxiliar != -1){
+					printf("El cliente con mas pedidos es: \n");
+					MostrarUnCliente(listaClientes, MAXClientes, auxiliar);
+				}
+			break;
+			case 14:
+				break;
+
 		}
 
 
-	}while(opcionMenuPrincipal != 11);
+
+	}while (opcionMenu != 14);
+
 
 	return 0;
 }

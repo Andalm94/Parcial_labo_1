@@ -1,0 +1,17 @@
+#include "eCliente.h"
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
+
+
+
+
+void InicializarClientes(eCliente* list, int tam){
+	int i;
+
+	for (i=0; i<tam; i++){
+		list[i].isEmpty = EMPTY;
+	}
+}
